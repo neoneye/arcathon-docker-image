@@ -42,7 +42,7 @@ and regenerated it from scratch.
 [Docker image: 2023-02-26T13-03.tar](2023-02-26T13-03.tar)
 
 The docker image had the wrong architecture. It was supposed to be amd64. I had submitted arm64.
-I guess it's because I rewrote my notes about regenerating the docker image.
+I guess it's because I rewrote my notes about regenerating the docker image, and thus messed up the docker image's architecture.
 
 Score 0.98 and 2% of the secret tasks.
 
