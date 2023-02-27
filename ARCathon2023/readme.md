@@ -57,6 +57,12 @@ I have removed the `arm64` platform entirely from the scripts that creates the d
 Now the docker image should only contain this platform: `amd64`. 
 The `loda-rust arc-competition` now prints out the architecture, so it's possible to verify what configuration is running.
 
+Immediately after I had submitted I realized that I had forgotten to run the important `rake payload` command.
+The `/root/loda-arc-challenge/programs` dir contains the same files as the repository `loda-arc-challenge`.
+The `/root/loda-arc-challenge/solutions.csv` file is identical to the same file in the repository `loda-arc-challenge`.
+The `/root/.loda-rust` may be slightly different than my `~/.loda-rust` dir.
+Next time I must remember to run the `rake payload` command.
+
 
 ## Iteration 3
 
