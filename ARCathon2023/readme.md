@@ -1,7 +1,7 @@
 # ARCathon 2023
 
 
-## Changes between ARCathon 2022 iteration 2 and ARCathon iteration 1
+## Changes between ARCathon 2022 iteration 2 and ARCathon 2023 iteration 1
 
 Cleaned up all the hardcoded messy code that I put together days before the 31-dec-2022 deadline.
 It took around 1 month to clean up. Lesson technical debt takes ages to clean up.
