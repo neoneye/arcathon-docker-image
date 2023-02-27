@@ -14,8 +14,9 @@ Now the executable continues to accumulate mutations until CTRL-C is pressed.
 
 [Docker image: 2023-02-13T21-40.tar](2023-02-13T21-40.tar)
 
-The docker image had the right architecture.
-However the score was lower than my previous score. 
+The docker image had the wrong architecture. It was supposed to be `amd64`. I had submitted `arm64`.
+
+The score was lower than my previous score. 
 At the end of ARCathon 2022 where I got 3rd place with score 0.97 and 3% of the 100 secret tasks.
 However now I'm getting the score 0.98 and 2% of the secret tasks.
 
@@ -41,7 +42,7 @@ and regenerated it from scratch.
 
 [Docker image: 2023-02-26T13-03.tar](2023-02-26T13-03.tar)
 
-The docker image had the wrong architecture. It was supposed to be amd64. I had submitted arm64.
+The docker image had the wrong architecture. It was supposed to be `amd64`. I had submitted `arm64`.
 I guess it's because I rewrote my notes about regenerating the docker image, and thus messed up the docker image's architecture.
 
 Score 0.98 and 2% of the secret tasks.
