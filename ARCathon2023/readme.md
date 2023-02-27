@@ -50,3 +50,15 @@ Score 0.98 and 2% of the secret tasks.
 Idea: If it has been running with the wrong architecture, it may have been doing emulation, and thus running terrible slow.
 This could explain why few mutations got explored.
 
+
+## Changes between iteration 2 and iteration 3
+
+I have removed the `arm64` platform entirely from the scripts that creates the docker image. 
+Now the docker image should only contain this platform: `amd64`. 
+The `loda-rust arc-competition` now prints out the architecture, so it's possible to verify what configuration is running.
+
+
+## Iteration 3
+
+[Docker image: 2023-02-27T21-26.tar](2023-02-27T21-26.tar)
+
