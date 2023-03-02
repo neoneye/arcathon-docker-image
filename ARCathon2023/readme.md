@@ -68,3 +68,17 @@ Next time I must remember to run the `rake payload` command.
 
 [Docker image: 2023-02-27T21-26.tar](2023-02-27T21-26.tar)
 
+Finally, the docker image now has the right architecture. It's `amd64`.
+
+The score has jumped from `score 2` to `score 4`. This is my new high.
+
+
+## Changes between iteration 3 and iteration 4
+
+I have added these solutions: `0dfd9992`, `29ec7d0e`.
+
+
+## Iteration 4
+
+[Docker image: 2023-03-02T22-37.tar](2023-03-02T22-37.tar)
+
