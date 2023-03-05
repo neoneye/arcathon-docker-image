@@ -82,3 +82,13 @@ I have added these solutions: `0dfd9992`, `29ec7d0e`.
 
 [Docker image: 2023-03-02T22-37.tar](2023-03-02T22-37.tar)
 
+It's still running the right architecture. It's `amd64`.
+
+The score has dropped from `score 4` to `score 2`. 
+
+Ideas what may be causing the score to drop.
+ - Starting with a different random seed.
+ - Applying mutations over and over. If a new solutin has been added. This impacts what mutations gets applied.
+ - My newest code are causing the miner to run slower, so it explores fewer mutations.
+ - My newest code does terrible predictions, and finding false-positive solutions.
+
