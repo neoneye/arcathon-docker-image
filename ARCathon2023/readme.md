@@ -92,3 +92,14 @@ Ideas what may be causing the score to drop.
  - My newest code are causing the miner to run slower, so it explores fewer mutations.
  - My newest code does terrible predictions, and finding false-positive solutions.
 
+
+## Changes between iteration 4 and iteration 5
+
+Replaced the fuzzy `ImageRepairTrigram` algorithm that didn't do well with bigger repeating patterns.
+Replace with the new `ImageRepairPattern` that better deals with big the mosaics.
+
+
+## Iteration 5
+
+[Docker image: 2023-03-05T16-31.tar](2023-03-05T16-31.tar)
+
