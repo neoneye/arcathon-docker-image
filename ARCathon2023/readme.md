@@ -103,3 +103,11 @@ Replace with the new `ImageRepairPattern` that better deals with big the mosaics
 
 [Docker image: 2023-03-05T16-31.tar](2023-03-05T16-31.tar)
 
+This got `score 2`. It didn't change the score.
+
+Ideas why `score=2`.
+ - The existing programs solve 2 of the secret puzzles.
+ - None of the mutations solve any of the secret puzzles.
+ - The initial random seed may be lucky and a few puzzles may get solved.
+ - The new repair algorithm is slow, that a smaller search space is explored.
+
