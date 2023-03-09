@@ -111,3 +111,23 @@ Ideas why `score=2`.
  - The initial random seed may be lucky and a few puzzles may get solved.
  - The new repair algorithm is slow, that a smaller search space is explored.
 
+
+## Changes between iteration 5 and iteration 6
+
+Now it's always the same random seed that gets assigned in each mutation.
+Running the docker container under the same conditions, should now generate the same output over and over.
+It's still non-deterministic. Change to the solutions repository impacts the analytics files, and impacts the mutations.
+Previously the initial random seed was based on datetime, thus the results could not be reproduced.
+
+Improved performance. 
+Added `AssertFunction` that throws an exception if a precondition isn't satisfied.
+Modified the slowest of the existing solutions to make use of the `AssertFunction`, so that less time is wasted on.
+
+
+## Iteration 6
+
+[Docker image: 2023-03-09T17-09.tar](2023-03-09T17-09.tar)
+
+
+
+
