@@ -123,11 +123,21 @@ Improved performance.
 Added `AssertFunction` that throws an exception if a precondition isn't satisfied.
 Modified the slowest of the existing solutions to make use of the `AssertFunction`, so that less time is wasted on.
 
+On my mac running `loda-rust arc-competition` for 24 hours, then 480 mutations gets tried out.
+This is higher than previously. In ARCathon 2022 my code only did 40 mutations.
+
 
 ## Iteration 6
 
 [Docker image: 2023-03-09T17-09.tar](2023-03-09T17-09.tar)
 
+This got `score 2`. It didn't change the score.
 
+Ideas
+ - The existing programs solve 2 of the secret puzzles.
+ - None of the mutations solve any of the secret puzzles.
+ - The initial random seed was unlucky, and didn't find any new solutions. Try pick another initial seed.
+ - Due to the new assertions in solutions, it may reject otherwise good mutations by accident.
 
+My thoughts about initial random seed. It shouldn't depend on getting lucky with picking a random seed. It should be able to solve puzzles even with the worst initial random seed.
 
