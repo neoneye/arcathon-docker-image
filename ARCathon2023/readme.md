@@ -141,3 +141,16 @@ Ideas
 
 My thoughts about initial random seed. It shouldn't depend on getting lucky with picking a random seed. It should be able to solve puzzles even with the worst initial random seed.
 
+
+## Changes between iteration 6 and iteration 7
+
+Previously I have been using `arc_json_model` as the data model for mining.
+Which required converting json data to Image, over and over.
+Now I have introduced a new the data model named `arc_work_model`, where the images are preloaded.
+I doubt this will impact performance.
+
+Bumped the initial random seed from 1 to 2.
+
+## Iteration 7
+
+[Docker image: 2023-03-18T19-16.tar](2023-03-18T19-16.tar)
