@@ -154,3 +154,14 @@ Bumped the initial random seed from 1 to 2.
 ## Iteration 7
 
 [Docker image: 2023-03-18T19-16.tar](2023-03-18T19-16.tar)
+
+This got `score 2`. It didn't change the score.
+
+This confirms that the new model `arc_work_model` hasn't broken things.
+
+Ideas
+ - The existing programs solve 2 of the secret puzzles.
+ - None of the mutations solve any of the secret puzzles.
+ - The initial random seed was unlucky, and didn't find any new solutions. Try pick another initial seed.
+ - Start making use of the new `arc_work_model`.
+
