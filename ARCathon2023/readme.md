@@ -167,8 +167,23 @@ Ideas
 
 ## Changes between iteration 7 and iteration 8
 
-Bumped the initial random seed from 2 to 3.
+Introduced a `Time limit` for how long a program is allowed to run. If it runs longer, then the program is discarded. The initial time limit is 200ms.
+In the past there have been programs that was taking `15` seconds, severely limiting the number of mutation that was possible to explore.
 
+The new `arc_work_model` now makes predictions about `output size` and `output palette`.
+However I don't yet expose this data to the `.asm` programs.
+
+I have updated all the `.asm` programs, from using 10 registers per pair, there are now 100 registers per pair.
+This is preparation for accessing the data from `arc_work_model` from within the `.asm` program.
+
+The `RunWithProgram.process_computed_images()` now invokes a `postprocess()` function that attempts fixing minor issues.
+- If all the images have swapped `width` and `height`, then it rotates the image.
+- If all the images creates the correct output but with the wrong palette, then the palette is `recolored`.
+- If all the images are flipped, then it tries `flip_x`, `flip_y`, `flip_xy`.
+
+Added 15 solutions.
+
+Bumped the initial random seed from 2 to 3.
 
 ## Iteration 8
 
