@@ -165,3 +165,12 @@ Ideas
  - The initial random seed was unlucky, and didn't find any new solutions. Try pick another initial seed.
  - Start making use of the new `arc_work_model`.
 
+## Changes between iteration 7 and iteration 8
+
+Bumped the initial random seed from 2 to 3.
+
+
+## Iteration 8
+
+[Docker image: 2023-03-24T21-24.tar](2023-03-24T21-24.tar)
+
