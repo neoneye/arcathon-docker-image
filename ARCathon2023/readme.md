@@ -197,8 +197,9 @@ This confirms that increasing the gap from 10 to 100 worked out fine. This means
 
 The newer code generates more false positives. Potentially outputting junk for the tasks that otherwise would be solvable.
 False positives has been a problem all the way back to the beginning. I think it's particular bad at the moment.
-One way to mitigate this is to use the predicted output size and the predicted color palette, and reject the results that doesn't satisfy these predicted data.
+The `postprocessing` made the predictions slightly worse.
+One way to mitigate this is to use the predicted output size and the predicted color palette, and reject the results that doesn't satisfy the predicted data.
 
-
-
+Ideas
+ - Bridge basic data such as `predicted width` + `predicted height` to the `.asm` programs.
 
