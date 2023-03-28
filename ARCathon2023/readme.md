@@ -189,3 +189,16 @@ Bumped the initial random seed from 2 to 3.
 
 [Docker image: 2023-03-24T21-24.tar](2023-03-24T21-24.tar)
 
+This got `score 2`. It didn't change the score.
+
+This confirms that my extensive changes to the new model `arc_work_model` hasn't broken things.
+
+This confirms that increasing the gap from 10 to 100 worked out fine. This means that I can proceed inserting metadata into the initial state of the program.
+
+The newer code generates more false positives. Potentially outputting junk for the tasks that otherwise would be solvable.
+False positives has been a problem all the way back to the beginning. I think it's particular bad at the moment.
+One way to mitigate this is to use the predicted output size and the predicted color palette, and reject the results that doesn't satisfy these predicted data.
+
+
+
+
