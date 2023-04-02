@@ -205,7 +205,29 @@ Ideas
 
 ## Changes between iteration 8 and iteration 9
 
+The `RunWithProgram` is now providing the programs with the first metadata ever. These are:
+- `PredictedOutputWidth`
+- `PredictedOutputHeight`
+- `OutputImageIsInputImageWithChangesLimitedToPixelsWithColor`
+
+The `OutputImageIsInputImageWithChangesLimitedToPixelsWithColor` is in particular useful. And is being used by the new `repair-mosaic.asm`.
+
+Mask operations with: `xor`, `and`, `or`, is now possible.
+
+Added 5 solutions.
+
+Removed 3 solutions, that was replaced by the new `repair-mosaic.asm`.
+
+The `PopularObjects.find_objects()` is now deterministic. Previously it did a sort on the mass of the object, but didn't consider the scenario where multiple objects have the same mass, and was ordering these objects in random order, leading to programs that behaves correct one moment, and behaving incorrect another moment.
+
+False positives. I have been investigating what is going on, and written a list of things to suppress false positives.
+Sometimes a candidate solution would get approved, despite none of the training pairs were correct.
+This was partially due to `PopularObjects.find_objects()` being non-deterministic.
+The `RunWithProgramResult` now has a `all_train_pairs_are_correct`, so it's no longer up to the caller to determine if a candidate solution is good.
+
 Bumped the initial random seed from 3 to 4.
+
+I did various experiments with identifying cellular automata parameters, but didn't find a reliable approach. So there are no `.asm` programs that does this.
 
 ## Iteration 8
 
