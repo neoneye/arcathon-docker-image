@@ -203,3 +203,11 @@ One way to mitigate this is to use the predicted output size and the predicted c
 Ideas
  - Bridge basic data such as `predicted width` + `predicted height` to the `.asm` programs.
 
+## Changes between iteration 8 and iteration 9
+
+Bumped the initial random seed from 3 to 4.
+
+## Iteration 8
+
+[Docker image: 2023-04-02T12-22.tar](2023-04-02T12-22.tar)
+
