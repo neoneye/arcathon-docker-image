@@ -229,7 +229,15 @@ Bumped the initial random seed from 3 to 4.
 
 I did various experiments with identifying cellular automata parameters, but didn't find a reliable approach. So there are no `.asm` programs that does this.
 
-## Iteration 8
+## Iteration 9
 
 [Docker image: 2023-04-02T12-22.tar](2023-04-02T12-22.tar)
+
+Yay, this got `score 4`. This is the same as my previous highest score. My previous highest score was when the code was behaving much more non-deterministic and where I assigned the initial random seed to the unix timestamp. With the current iteration the code is more deterministic, so it should yield the same output when running the code again.
+
+In between iteration 7 and iteration 8, I added a mechanism that rejects candidate solutions that takes too much time. I was concerned that it would reject otherwise good solutions. The rejection time is 200ms. It seems to be a fine time limit.
+
+My thoughts
+- Does the program crash, or does it run all the way to the end without crashing.
+- Are all the solutions found while traversing the existing solutions. Are some of the solutions found while mutating the existing solutions.
 
