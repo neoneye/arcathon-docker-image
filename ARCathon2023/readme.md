@@ -241,3 +241,12 @@ My thoughts
 - Does the program crash, or does it run all the way to the end without crashing.
 - Are all the solutions found while traversing the existing solutions. Are some of the solutions found while mutating the existing solutions.
 
+## Changes between iteration 9 and iteration 10
+
+Didn't touch the initial random seed. It's still 4.
+
+## Iteration 10
+
+[Docker image: 2023-04-13T13-10.tar](2023-04-13T13-10.tar)
+
+
