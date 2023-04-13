@@ -245,6 +245,33 @@ My thoughts
 
 Didn't touch the initial random seed. It's still 4.
 
+In this iteration I wanted to enumerate the objects that was detected. However there are too many grid tasks, that was causing the object detection to mess up. I have to do a grid detector first, and afterwards an object detector. So I abbandoned the object enumeration and instead switched focus to symmetry detection.
+
+Symmetry detection. All the input images are analyzed for these symmetries:
+- Horizontal
+- Vertical
+- Diagonal A
+- Diagonal B
+
+The symmetry can be partial. There are several tasks where the pixels have been obscured, and the job is to repair the obscured pixels. If the majority of pixels are symmetric, then it gets detected.
+
+The symmetry can be with an inset. There are several tasks where there is symmetry that isn't perfectly aligned in the center. These now gets identified as being symmetric.
+
+Diagonal symmetry. It doesn't try out different sizes of the square. It's always the `min(width, height)`. In the future I may want to implement this.
+
+The new symmetry code cannot detect rotational symmetry. In the future I may want to implement this.
+
+There is now `pair.input.repair_mask` and `pair.input.repaired_image`, so that the asm programs doesn't have to do the repair.
+
+Added `repair-symmetry.asm` and `repair-symmetry-crop.asm`, that solves a handful of tasks. 
+
+There are several tasks that have some kind of symmetry, that cannot be solved.
+
+Thoughts:
+- Detection of rotational symmetry may help solving more tasks of this kind.
+- Inset together with diagonal a/b symmetry. There may be a few tasks where this is useful.
+- Detection of symmetry in the output for training pairs. Determine if there a correlation between input symmetry and output symmetry.
+
 ## Iteration 10
 
 [Docker image: 2023-04-13T13-10.tar](2023-04-13T13-10.tar)
