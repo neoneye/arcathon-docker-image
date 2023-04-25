@@ -285,7 +285,26 @@ Thoughts:
 
 Didn't touch the initial random seed. It's still 4.
 
-I have been working on grid detection.
+I have been working on grid detection. In 67 tasks a grid can be detected. I have spotted 1 of the tasks where the detected grid has the wrong properties.
+There are edge cases where a grid is detected, where it would be a better fit detecting objects.
+
+- It can detect grids with a few mismatches in the grid structure.
+- It can detect grids where the lines thickness varies.
+- It can detect grids where the lines have different colors across the input pairs.
+- It can only detect grids when there is the same spacing for all cells. It cannot detect grids with weird spacing.
+- It cannot detect horizontal/vertically stacked images that are separated by color. Example 5 cells wide and 1 cell tall, with a red separator line.
+- The grid must contain 2 or more cells. There are several tasks that have 1 cell but these yield some terrible grid detections, so I avoid those.
+
+Now passing a `GridMask`, `GridColor`, `EnumeratedObjects` to the LODA programs.
+
+I have added 3 new solutions to the repository. With so few new programs, I don't expect this to discover any new solutions.
+So if stays on `score 4` then I'm satisfied.
+
+Thoughts:
+- Detect horizontal/vertical stacks of images. There are many ARC tasks with this pattern.
+- Detect objects and do manipulations with objects. So far there are only a few solutions that does this.
+- Send the gathered info to a neural network and see if it helps.
+- I need more tools for manipulating objects.
 
 ## Iteration 11
 
