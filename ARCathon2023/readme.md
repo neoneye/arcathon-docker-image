@@ -281,3 +281,13 @@ This got `score 4`. It didn't change the score.
 Thoughts:
 - There seems to be no `easy to repair symmetry` tasks in the private dataset.
 
+## Changes between iteration 10 and iteration 11
+
+Didn't touch the initial random seed. It's still 4.
+
+I have been working on grid detection.
+
+## Iteration 11
+
+[Docker image: 2023-04-25T13-50.tar](2023-04-25T13-50.tar)
+
