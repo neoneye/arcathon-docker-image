@@ -310,3 +310,14 @@ Thoughts:
 
 [Docker image: 2023-04-25T13-50.tar](2023-04-25T13-50.tar)
 
+This got `score 4`. It didn't change the score.
+
+I'm glad that that I have been able to add several new solutions without worsening the score. Adding new solutions impacts the analytics data used for 
+mutating programs, so the same solution may no longer be discovered when using newer analytics data.
+
+I want to detect objects. This has not been possible in the past, because the mosaic patterns and grid patterns was causing more noise than signal.
+Now that I have detectors for grid and symmetry. If it's none of those, then I can try detect the objects.
+
+Thoughts:
+- There seems to be no `easy to solve grid` tasks in the private dataset.
+
