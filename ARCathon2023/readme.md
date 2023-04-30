@@ -325,6 +325,25 @@ Thoughts:
 
 Didn't touch the initial random seed. It's still 4.
 
+A few new cases where the `EnumeratedObjects` is populated with data.
+
+Added `crop_first_object.asm` that solves a few tasks where there are multiple enumerated objects.
+The enumerated objects can be ordered by: mass, symmetry, asymmetry.
+
+With only 1 new solution added to the repository that solves a few simple tasks. I don't expect this to discover solutions for advanced tasks.
+So if stays on `score 4` then I'm satisfied.
+
+I did proof of concept with an RNN, but the predictions were too poor. I may try out LSTM or transformer.
+
+Began experiments with an alternative solution using a 3x3 convolution. Work in progress.
+I'm not sure how to populate the model, nor how to extract data from the model.
+
+Thoughts:
+- Solve more tasks about objects.
+- Try out LSTM or Transformer.
+- Continue with the 3x3 convolution experiment.
+
 ## Iteration 12
 
 [Docker image: 2023-04-30T11-50.tar](2023-04-30T11-50.tar)
+
