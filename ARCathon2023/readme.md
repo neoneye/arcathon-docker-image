@@ -321,3 +321,10 @@ Now that I have detectors for grid and symmetry. If it's none of those, then I c
 Thoughts:
 - There seems to be no `easy to solve grid` tasks in the private dataset.
 
+## Changes between iteration 11 and iteration 12
+
+Didn't touch the initial random seed. It's still 4.
+
+## Iteration 12
+
+[Docker image: 2023-04-30T11-50.tar](2023-04-30T11-50.tar)
