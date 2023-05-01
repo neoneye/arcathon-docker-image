@@ -347,3 +347,5 @@ Thoughts:
 
 [Docker image: 2023-04-30T11-50.tar](2023-04-30T11-50.tar)
 
+Wow, this got `score 6`. This is huge jump from my previous `score 4`. Awesome!
+
