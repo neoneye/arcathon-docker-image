@@ -349,3 +349,22 @@ Thoughts:
 
 Wow, this got `score 6`. This is huge jump from my previous `score 4`. Awesome!
 
+## Changes between iteration 12 and iteration 13
+
+Didn't touch the initial random seed. It's still 4.
+
+Added `SubstituteRule` for determining if a task can be solved by a search/replace with 1 pattern.
+It solves several of the tasks in the ARC 1 public dataset. I doubt that it will solve any tasks in the private test set, since it's a simple action. I imagine the private test set to contain advanced tasks that requires object manipulation.
+
+Success criteria. If it continues with `score 6`, then I'm happy.
+
+Thoughts:
+- Solve more tasks about objects.
+- Try out LSTM or Transformer.
+- Continue with the 3x3 convolution experiment.
+
+## Iteration 13
+
+[Docker image: 2023-05-03T23-58.tar](2023-05-03T23-58.tar)
+
+
