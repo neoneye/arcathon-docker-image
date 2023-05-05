@@ -367,4 +367,5 @@ Thoughts:
 
 [Docker image: 2023-05-03T23-58.tar](2023-05-03T23-58.tar)
 
+This got `score 6`. Great it says on the same score as previously.
 
