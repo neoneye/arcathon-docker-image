@@ -369,3 +369,27 @@ Thoughts:
 
 This got `score 6`. Great it says on the same score as previously.
 
+The `SubstituteRule` didn't impact the score. I'm keeping the code, since it solves several tasks in the public dataset.
+
+## Changes between iteration 13 and iteration 14
+
+Didn't touch the initial random seed. It's still 4.
+
+I have lowered the duration that it runs, so it now runs for 10 hours and then stops. Previously it ran for 23h30m. It would take around 2-3 days before I got feedback.
+I'm wondering if most of the solutions gets discovered within the first few minutes. This way I can submit before I go to sleep and hopefully see a result next day. 
+
+Success criteria. If it continues with `score 6`, then I'm happy.
+- If the score drops, it may be due to the short 10 hour time-duration. I may have to rollback to the 23h30m.
+- If the score drops, it may be due to the newly added solutions, that worsens things.
+
+Added `ReverseColorPopularity` that replaces the `most popular color` and swaps with the `least popular color`. This solved 3 tasks.
+
+Extended the `enumerate objects`, so it identifies the case where there is `OutputImageHasSameStructureAsInputImage` and a single `OutputImageIsInputImageWithNoChangesToPixelsWithColor` and a single `InputImageIsOutputImageWithNoChangesToPixelsWithColor`. And they agree on a color. This solved 3 tasks.
+
+Thoughts:
+- Solve more tasks about objects.
+
+## Iteration 14
+
+[Docker image: 2023-05-08T00-15.tar](2023-05-08T00-15.tar)
+
