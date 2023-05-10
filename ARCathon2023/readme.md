@@ -425,3 +425,15 @@ Thoughts:
 ## Iteration 15
 
 [Docker image: 2023-05-10T14-42.tar](2023-05-10T14-42.tar)
+
+This got `score 6`. Great it stays on the same score as previously.
+
+This was incredibly fast. I submitted earlier today, and I got a response in the evening.
+
+Thoughts about time-limit:
+- Positive: The shorter time-limit didn't impact the score in a negative way.
+- Positive: I got feedback the same day as I submitted.
+- I'm going to keep the new 4 hour time-limit.
+- This seems to confirm that the discoveries happens in the beginning using the already discovered solutions.
+- Can the time-limit can be halved again?
+
