@@ -393,7 +393,7 @@ Thoughts:
 
 [Docker image: 2023-05-08T00-15.tar](2023-05-08T00-15.tar)
 
-This got `score 6`. Great it says on the same score as previously.
+This got `score 6`. Great it stays on the same score as previously.
 
 Thoughts about time-limit:
 - Positive: The shorter time-limit didn't impact the score in a negative way.
@@ -405,3 +405,23 @@ Thoughts about time-limit:
 
 Didn't touch the initial random seed. It's still 4.
 
+I have lowered the duration to 4 hours. I still think that most of the solutions gets discovered within the first few minutes.
+- If the score drops, it may be due to the short 4 hour time-limit. I may have to rollback to the 10 hour time-limit.
+- If the score drops, it may be due to the newly added solutions, that worsens things.
+
+Solved around 10 tasks:
+- Tasks where the job is to identify the biggest, medium, smallest objects, and color them differently.
+- Tasks about cropping out the object, and reverse it's colors by popularity.
+- Tasks where the job is to objects with a precise mass, and color all other sized objects with a different color.
+
+Success criteria. If it continues with `score 6`, then I'm happy.
+- It will mean that the new time limit is good, and that I haven't broken things.
+
+Thoughts:
+- My solutions can only do basic operations with objects. My weakness is lack of object operations.
+- I guess the private dataset has tasks with object operations. It may be the majority of tasks. I cannot process these `object-tasks`.
+- What is an object?
+
+## Iteration 15
+
+[Docker image: 2023-05-10T14-42.tar](2023-05-10T14-42.tar)
