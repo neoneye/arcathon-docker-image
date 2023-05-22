@@ -437,3 +437,25 @@ Thoughts about time-limit:
 - This seems to confirm that the discoveries happens in the beginning using the already discovered solutions.
 - Can the time-limit can be halved again?
 
+## Changes between iteration 15 and iteration 16
+
+Didn't touch the initial random seed. It's still 4.
+
+Didn't touch the time limit. It's still 4 hours.
+
+I have manually solved 16 tasks.
+
+Now passing on more fields to the LODA programs.
+- `InputMostPopularColor` is the most popular color across the inputs.
+- `InputSinglePixelNoiseColor` is the color that is the most popular single pixel noise.
+
+Success criteria. If it continues with `score 6`, then I'm happy.
+- It will mean that the new time limit is good, and that I haven't broken things.
+
+Thoughts:
+- My solutions can only do basic operations with objects. My weakness is lack of object operations.
+- I have picked all the low hanging fruit and things have gotten difficult. Now I want to try out machine learning approaches.
+
+## Iteration 16
+
+[Docker image: 2023-05-22T20-22](2023-05-22T20-22)
