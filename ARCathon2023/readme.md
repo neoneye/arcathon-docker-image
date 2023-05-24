@@ -459,3 +459,17 @@ Thoughts:
 ## Iteration 16
 
 [Docker image: 2023-05-22T20-22](2023-05-22T20-22)
+
+This got `score 6`. Great it stays on the same score as previously.
+
+Thoughts:
+- I'm passing several parameters to the asm programs, this could easily have broken the existing programs. Great that it didn't impact the score negatively.
+- I added `most popular color` and the `noise color`, however these didn't lead to new discoveries. I will keep these parameters around.
+- I added several asm programs. However none of those lead to new discoveries.
+- Try out: Can the time limit be cut in half again.
+
+## Changes between iteration 16 and iteration 17
+
+Experiments with logistic regression.
+
+
