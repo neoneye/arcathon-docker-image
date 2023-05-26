@@ -482,6 +482,17 @@ Experiments with logistic regression.
 
 I don't run mutations, so it stops immediately after logistic regression.
 
+Success criteria. If it improves the so it goes beyond `score 6`, then I'm happy.
+- It will mean that the logistic regression did make an improvement.
+- If it drops below `score 6`, then the mutations that I disabled may have found solutions to the secret dataset, but since it's disabled then these are no longer solved.
+- If it continues with `score 6`, then logistic regression didn't solve any tasks in the secret dataset.
+
+Thoughts:
+- Reject a predicted output from logistic regression, if it's obviously junk or too different than the training pairs.
+- Do logistic regression with tasks where the input size is different than the output size.
+- Experiment with more input data for the logistic regression.
+- How can I do mutations after the logistic regression has been run? Currently I have disabled mutations. If bad predictions can be rejected, then the remaining tasks can be mutated.
+
 ## Iteration 17
 
 [Docker image: 2023-05-26T10-14.tar](2023-05-26T10-14.tar)
