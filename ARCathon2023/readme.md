@@ -458,7 +458,7 @@ Thoughts:
 
 ## Iteration 16
 
-[Docker image: 2023-05-22T20-22](2023-05-22T20-22)
+[Docker image: 2023-05-22T20-22.tar](2023-05-22T20-22.tar)
 
 This got `score 6`. Great it stays on the same score as previously.
 
@@ -470,6 +470,19 @@ Thoughts:
 
 ## Changes between iteration 16 and iteration 17
 
+Didn't touch the initial random seed. It's still 4.
+
 Experiments with logistic regression.
 
+- 800 tasks in total in the ARC1 dataset.
+- 268 tasks where the input size is different than the output size. I cannot process with these with logistic regression, so I ignore these tasks.
+- 545 tasks where the input size is the same as the output size. These are the tasks that I'm processing with logistic regression.
+- Around 40 tasks can be solved with logistic regression.
+- Around 22 tasks are that I had no prior solution for.
+
+I don't run mutations, so it stops immediately after logistic regression.
+
+## Iteration 17
+
+[Docker image: 2023-05-26T10-14.tar](2023-05-26T10-14.tar)
 
