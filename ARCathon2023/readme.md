@@ -498,3 +498,13 @@ Thoughts:
 
 [Docker image: 2023-05-26T10-14.tar](2023-05-26T10-14.tar)
 
+This got `score 5`. I'm surprised that it dropped. Previous it has been `score 6`. It was supposed to use logistic regression for cases where no other solution could be found.
+
+Thoughts:
+- Scenario A: my check for `task.occur_in_solutions_csv` doesn't work. So it did compute logistic regression for all the tasks, and thus overwriting what was found by the existing solutions. This is the same as running only logistic regression and not running any of the existing solutions. So this would be 5% of the programs that can be solved with logistic regression. If this is the case, then make sure I don't overwrite the existing solution.
+- Scenario B: some of the solutions are discovered while mutating the existing programs. And the tasks in the hidden dataset are so tricky, that logistic regression cannot solve any of those. Try submit an executable where the time limit is 0, so that it only runs the existign solutions and none of the mutations.
+- Scenario C: other ideas?
+
+
+
+
