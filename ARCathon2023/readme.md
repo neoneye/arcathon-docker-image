@@ -492,6 +492,7 @@ Thoughts:
 - Do logistic regression with tasks where the input size is different than the output size.
 - Experiment with more input data for the logistic regression.
 - How can I do mutations after the logistic regression has been run? Currently I have disabled mutations. If bad predictions can be rejected, then the remaining tasks can be mutated.
+- Principal component analysis (PCA) with the logistic regression data. Can insignificant data be eliminated, so it's only the significant stuff that remain?
 
 ## Iteration 17
 
