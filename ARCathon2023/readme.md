@@ -505,6 +505,19 @@ Thoughts:
 - Scenario B: some of the solutions are discovered while mutating the existing programs. And the tasks in the hidden dataset are so tricky, that logistic regression cannot solve any of those. Try submit an executable where the time limit is 0, so that it only runs the existign solutions and none of the mutations.
 - Scenario C: other ideas?
 
+## Changes between iteration 17 and iteration 18
+
+Didn't touch the initial random seed. It's still 4.
+
+Experiments with logistic regression.
+
+Scenario A seems to be what I ended up in. I inspected the code and fixed it. I did traverse all tasks, and thus overwriting the already found solutions with the result of logistic regression.
+Now I only traverse the unsolved tasks and try doing logistic regression on it.
+
+Success criteria. The success criteria is identical to my previous success criteria. If it improves the so it goes beyond `score 6`, then I'm happy.
+- It will mean that the logistic regression did make an improvement.
+- If it drops below `score 6`, then the mutations that I disabled may have found solutions to the secret dataset, but since it's disabled then these are no longer solved.
+- If it continues with `score 6`, then logistic regression didn't solve any tasks in the secret dataset.
 
 
 
