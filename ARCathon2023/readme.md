@@ -519,5 +519,8 @@ Success criteria. The success criteria is identical to my previous success crite
 - If it drops below `score 6`, then the mutations that I disabled may have found solutions to the secret dataset, but since it's disabled then these are no longer solved.
 - If it continues with `score 6`, then logistic regression didn't solve any tasks in the secret dataset.
 
+## Iteration 18
+
+[Docker image: 2023-05-28T21-50.tar](2023-05-28T21-50.tar)
 
 
