@@ -523,4 +523,26 @@ Success criteria. The success criteria is identical to my previous success crite
 
 [Docker image: 2023-05-28T21-50.tar](2023-05-28T21-50.tar)
 
+This got `score 5`.
+I fixed a problem with the logistic regression, that was overwriting already found solutions.
+So now I'm pretty confident that the logistic regression hasn't messed up previous found solutions.
+
+Thoughts about why the score has dropped. I have disabled the 4 hours of mutations. There is a chance that the solutions has been found during the mutations.
+I should try out run both logistic regression together with the mutations.
+
+Idea A: Safe route. Disable logistic regression, reenable mutation. Verify that `score 6` still can be reached.
+I also changed the time limit, so I may have to increase it to 4 hours again.
+Afterwards submit again, but with the logistic regression enabled + mutations.
+
+Idea B: Less safe. Continue with logistic regression enabled, and get the mutation code working together with logistic regression.
+It's impossible to determine if the `score 6` is only due to the LODA programs, or some of them was found with logistic regression.
+
+## Changes between iteration 18 and iteration 19
+
+Didn't touch the initial random seed. It's still 4.
+
+
+
+
+
 
