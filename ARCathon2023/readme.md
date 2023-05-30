@@ -541,8 +541,23 @@ It's impossible to determine if the `score 6` is only due to the LODA programs, 
 
 Didn't touch the initial random seed. It's still 4.
 
+Restored time limit to 4 hours again.
 
+Disabled logistic regression.
 
+Reenabled mutations of existing solutions.
 
+Success criteria.
+- In the past this combo 2 times gotten `score 6`. So if I can get `score 6` again, then it's good.
+- I don't expect the score to go higher, since I have not added any new solutions.
+
+Thoughts:
+- Investigate can the time limit be halfed to 2 hours, and still yield the same score.
+- Afterwards get mutations to work together with logistic regression.
+- Reminder to self: Only change 1 thing at a time.
+
+## Iteration 19
+
+[Docker image: 2023-05-30T21-15.tar](2023-05-30T21-15.tar)
 
 
