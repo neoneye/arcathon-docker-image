@@ -604,4 +604,12 @@ Thoughts:
 
 [Docker image: 2023-06-01T15-56.tar](2023-06-01T15-56.tar)
 
+This got `score 0`. This means that my logistic regression code doesn't work.
+I had mistakenly believed that my logistic regression approach was solving tasks, but it was instead the tasks that were using the existing solutions.
+When testing logistic regression in isolation, then zero tasks are solved.
+
+Thoughts:
+- Pause my logistic regression approach. In it's current form it doesn't solve anything.
+- Try out another approach.
+
 
