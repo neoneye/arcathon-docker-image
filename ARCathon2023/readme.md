@@ -581,3 +581,27 @@ Thoughts:
 - Halving the run time from 4 hours to 2 hours, will it still yield `score=5`?
 - Doubling the max time limit for each solution, will it solve programs during the mutations, that it wouldn't otherwise solve?
 
+## Changes between iteration 19 and iteration 20
+
+Disabled the existing solutions.
+
+Disabled mutation of the existing solutions.
+
+Now it's only the logistic regression that runs.
+
+Maybe my initial impression that logistic regression works is flawed. If so, then the score should be zero.
+Thinking that logistic regression works, and it doesn't work that may be a lot of time wasted on nothing.
+So with this docker image I hope to clarify, does it work or not.
+
+Outcomes:
+- Score is zero, then it means that my logistic regression code doesn't work.
+- Score is non-zero, then it means that my logistic regression does work. I hope for this scenario.
+
+Thoughts:
+- If it works, then it's weird that it's solves the same tasks that are being solved with the existing solutions.
+
+## Iteration 20
+
+[Docker image: 2023-06-01T15-56.tar](2023-06-01T15-56.tar)
+
+
