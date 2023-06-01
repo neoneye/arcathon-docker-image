@@ -560,4 +560,24 @@ Thoughts:
 
 [Docker image: 2023-05-30T21-15.tar](2023-05-30T21-15.tar)
 
+This got `score 5`. This is lower than what I had expected, I had expected `score=6`. 
+
+My logistic regression code is entirely disabled. It usees the existing solutions and mutates the existing solutions.
+
+There are still issues about the mutation process that are non-deterministic.
+
+The way that a program gets rejected when it's too time consuming.
+It may be that a solution was found in the past, but now the mutation takes slightly longer time to run and the program gets rejected.
+So time limit may be the reason.
+
+The non-deterministic can also arise from a trashed random-seed.
+If a program is rejected due to exeeding the time limit, and the random seed has been impacted by that program, then all the following mutations 
+will be using another random-seed. I think I have solve this issue.
+
+It may be extracting data from `HashMap` or `HashSet` causes data ends up in a random order. I have fixed it many places, by sorting the data
+before further processing is taking place. However there may still be places where no sorting is happening.
+
+Thoughts:
+- Halving the run time from 4 hours to 2 hours, will it still yield `score=5`?
+- Doubling the max time limit for each solution, will it solve programs during the mutations, that it wouldn't otherwise solve?
 
