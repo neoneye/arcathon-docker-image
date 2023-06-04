@@ -612,4 +612,36 @@ Thoughts:
 - Pause my logistic regression approach. In it's current form it doesn't solve anything.
 - Try out another approach.
 
+## Changes between iteration 20 and iteration 21
 
+I have been experimenting converting images into a graph. For this I use [petgraph](https://docs.rs/petgraph/latest/petgraph/).
+
+I have been experimenting with gravity of objects.
+
+Disabled logistic regression.
+
+Reenabled the existing solutions. Reenabled mutation of the existing solutions.
+
+Didn't touch the initial random seed. It's still 4.
+
+The time limit is 4 hours.
+
+I have added 23 new solutions. And removed 1 redundant solution.
+
+I have replaced existing code that used `overlay` several times, with a single function that deals with overlaying multiple layers on top of each other. Z-stack.
+
+I have made a split image function into X parts. It simplifies several exising solutions that did splitting by kludgy ways.
+
+Thoughts:
+- My changes to existing solutions may brake things, so that previous solutions are no longer found.
+- My changes to existing solutions may also lead to new discoveries, while preserving the previously found solutions.
+- The 23 new solutions, may help find new solutions.
+
+Success criteria.
+- In the past the highest I have gotten was `score 6`. So if I can get `score 6` again, then it's good.
+- I doubt it will go higher, since the new solutions are not doing any object manipulation, and I consider the object manipulation tasks more advanced than the pixel manipulation tasks.
+- If the score drops below `score 5`, then my `improvements` may have broken something.
+
+## Iteration 21
+
+[Docker image: 2023-06-04T23-35.tar](2023-06-04T23-35.tar)
