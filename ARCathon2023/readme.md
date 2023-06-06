@@ -645,3 +645,15 @@ Success criteria.
 ## Iteration 21
 
 [Docker image: 2023-06-04T23-35.tar](2023-06-04T23-35.tar)
+
+This got `score 5`. So I didn't break everything by making changes to several existing solutions. That's good.
+
+Thoughts:
+- I should do more object manipulation.
+
+
+## Changes between iteration 21 and iteration 22
+
+I'm experimenting with gravity of objects.
+
+
