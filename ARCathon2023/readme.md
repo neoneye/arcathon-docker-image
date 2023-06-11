@@ -651,9 +651,33 @@ This got `score 5`. So I didn't break everything by making changes to several ex
 Thoughts:
 - I should do more object manipulation.
 
-
 ## Changes between iteration 21 and iteration 22
 
+The initial random seed is 4.
+
+The time limit is 4 hours.
+
+Major rework of the `arc_work_model`. Extracted big parts of `arc_work_model::Input` to a new struct `ImageMeta`, so that the same image processing now also is applied to the output images.
+
 I'm experimenting with gravity of objects.
+
+Added 4 solutions. Probably not going to solve any of the hidden tasks.
+
+Success criteria.
+- I doubt that I again get `score=6`. If a program takes too long to execute, it gets killed. A program that previously have been killed, maybe it completes successfully.
+- If the score stays the same `score=5`, then I know I haven't broken too many things while doing the major rework.
+- If the score drops, then I should investigate what I may have broken.
+
+Thoughts:
+- I have experienced stackoverflows recently, and I'm considering moving the data from the stack to the heap.
+- There are fewer tasks in the hidden dataset (100 tasks), so it's less likely that to crash due to stackoverflow.
+
+## Iteration 22
+
+[Docker image: 2023-06-11T23-59.tar](2023-06-11T23-59.tar)
+
+
+
+
 
 
