@@ -676,6 +676,7 @@ Thoughts:
 
 [Docker image: 2023-06-11T23-59.tar](2023-06-11T23-59.tar)
 
+This got `score 5`. So I didn't break everything by making changes to several existing solutions. That's good.
 
 
 
