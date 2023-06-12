@@ -678,6 +678,61 @@ Thoughts:
 
 This got `score 5`. So I didn't break everything by making changes to several existing solutions. That's good.
 
+## Changes between iteration 22 and iteration 23
+
+The initial random seed is 4.
+
+The time limit is 4 hours.
+
+I have investigated the source of the stackoverflow and it was due to my `flood_fill` algorithm, that didn't check if the color was already assigned. Causing infinite recursion.
+It was hard to track down. The crash happened after 1 hour of running in RELEASE mode.
+```
+thread 'tokio-runtime-worker' has overflowed its stack
+fatal runtime error: stack overflow
+zsh: abort      loda-rust arc-competition
+```
+I have been toying with some other ARC datasets, and I realized that with the `1D-ARC` dataset, I could get the program to crash sooner. So I started removing as many ARC tasks as possible, 
+and finally were down to a single ARC task. Similarly with the solutions, I removed everything until there were just 1 solution remaining.
+Now the program was crashing instantly, and I could run it with `rust-lldb` and see where the crash happened.
+
+```
+PROMPT> cargo build -p loda-rust-cli
+PROMPT> rust-lldb ./target/debug/loda-rust arc-competition
+(lldb) r
+2023-06-12T18:19:11Z - Start of program
+lots of output
+Process 48594 stopped
+* thread #12, name = 'tokio-runtime-worker', stop reason = EXC_BAD_ACCESS (code=2, address=0x17127bfc0)
+    frame #0: 0x00000001011a4c5c loda-rust`core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h1a435efb678a5fe5(self=<unavailable>) at mut_ptr.rs:35
+Target 0: (loda-rust) stopped.
+(lldb) bt -c 10
+* thread #12, name = 'tokio-runtime-worker', stop reason = EXC_BAD_ACCESS (code=2, address=0x17127bfc0)
+  * frame #0: 0x00000001011a4c5c loda-rust`core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h1a435efb678a5fe5(self=<unavailable>) at mut_ptr.rs:35
+    frame #1: 0x0000000101189c48 loda-rust`_$LT$alloc..vec..Vec$LT$T$C$A$GT$$u20$as$u20$core..ops..deref..Deref$GT$::deref::h6ac3d357652fed5a at mod.rs:1173:21
+    frame #2: 0x0000000101189c28 loda-rust`_$LT$alloc..vec..Vec$LT$T$C$A$GT$$u20$as$u20$core..ops..deref..Deref$GT$::deref::h6ac3d357652fed5a(self=0x0000000171474ab0) at mod.rs:2533:40
+    frame #3: 0x00000001010ee184 loda-rust`_$LT$alloc..vec..Vec$LT$T$C$A$GT$$u20$as$u20$core..ops..index..Index$LT$I$GT$$GT$::index::h53e56d010093d6b8(self=0x0000000171474ab0, index=16) at mod.rs:2628:23
+    frame #4: 0x00000001000201c0 loda-rust`loda_rust::arc::image::Image::get::h84b709382fb13d8b(self=0x0000000171474ab0, x=16, y=0) at image.rs:87:14
+    frame #5: 0x00000001003c5488 loda-rust`loda_rust::arc::image_fill::FloodFill::flood_fill4::he8ac8be579fa3bb9(image=0x0000000171474ab0, x=16, y=0, from_color='\0', to_color='\0') at image_fill.rs:61:25
+    frame #6: 0x00000001003c5524 loda-rust`loda_rust::arc::image_fill::FloodFill::flood_fill4::he8ac8be579fa3bb9(image=0x0000000171474ab0, x=17, y=0, from_color='\0', to_color='\0') at image_fill.rs:66:9
+    frame #7: 0x00000001003c5574 loda-rust`loda_rust::arc::image_fill::FloodFill::flood_fill4::he8ac8be579fa3bb9(image=0x0000000171474ab0, x=16, y=0, from_color='\0', to_color='\0') at image_fill.rs:67:9
+    frame #8: 0x00000001003c5524 loda-rust`loda_rust::arc::image_fill::FloodFill::flood_fill4::he8ac8be579fa3bb9(image=0x0000000171474ab0, x=17, y=0, from_color='\0', to_color='\0') at image_fill.rs:66:9
+    frame #9: 0x00000001003c5574 loda-rust`loda_rust::arc::image_fill::FloodFill::flood_fill4::he8ac8be579fa3bb9(image=0x0000000171474ab0, x=16, y=0, from_color='\0', to_color='\0') at image_fill.rs:67:9
+```
+
+This revealed that `flood_fill4()` function was calling itself forever. Now I have fixed the flood fill algorithm.
+
+Added a few more solutions.
+
+Success criteria.
+- I doubt that I again get `score=6`. It may be due to random chance.
+- If the score stays the same `score=5`. I have not made any major reworks, except fixing the flood fill and adding a few solutions, probably not going to impact the score.
+
+Thoughts:
+- I'm glad that I solved the stackoverflow problem. It has been haunting me for months.
+
+## Iteration 23
+
+[Docker image: 2023-06-12T22-49.tar](2023-06-12T22-49.tar)
 
 
 
