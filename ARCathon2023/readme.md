@@ -734,6 +734,17 @@ Thoughts:
 
 [Docker image: 2023-06-12T22-49.tar](2023-06-12T22-49.tar)
 
+I didn't receive a mail with the score. So I'm not sure how the stackoverflow fix will impact the score, probably not.
+
+## Changes between iteration 23 and iteration 24
+
+I have focused on `arc-size`, it's a new subcommand for predicting the output size of a task.
+The way to invoke it: `loda-rust arc-size path/to/task.json`
+
+## Iteration 24
+
+I have merged it to `develop`. So I'm on iteration 25 now.
+
 
 
 
