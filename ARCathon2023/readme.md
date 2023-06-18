@@ -745,6 +745,22 @@ The way to invoke it: `loda-rust arc-size path/to/task.json`
 
 I have merged it to `develop`. So I'm on iteration 25 now.
 
+## Changes between iteration 24 and iteration 25
+
+I didn't get feedback on iteration 23, and I haven't submitted iteration 24. So now I'm submitting what I have.
+
+Changes since iteration 22:
+- Fixed stackoverflow that caused crash while running.
+- Added several programs.
+- The output size prediction has been slightly improved.
+
+Success criteria.
+- I doubt that I again get `score=6`. It may be due to random chance.
+- It will probably be `score=5` as it has been for several iterations.
+
+## Iteration 25
+
+[Docker image: 2023-06-18T23-40.tar](2023-06-18T23-40.tar)
 
 
 
