@@ -762,5 +762,7 @@ Success criteria.
 
 [Docker image: 2023-06-18T23-40.tar](2023-06-18T23-40.tar)
 
+This got `score 5`. Great.
+
 
 
