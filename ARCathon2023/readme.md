@@ -764,5 +764,21 @@ Success criteria.
 
 This got `score 5`. Great.
 
+## Changes between iteration 25 and iteration 26
 
+I have focused on computing the output size for more tasks.
+
+Solved a few tasks from the Concept ARC dataset.
+
+Success criteria.
+- I doubt that I again get `score=6`. It may be due to random chance.
+- It will probably be `score=5` as it has been for several iterations.
+
+Thoughts:
+- Ensemble of existing solutions + mine, is that something I should try out?
+- A graph representation of a task.
+
+## Iteration 26
+
+[Docker image: 2023-06-22T15-17.tar](2023-06-22T15-17.tar)
 
