@@ -782,3 +782,5 @@ Thoughts:
 
 [Docker image: 2023-06-22T15-17.tar](2023-06-22T15-17.tar)
 
+This got `score 5`. Great.
+
