@@ -784,3 +784,27 @@ Thoughts:
 
 This got `score 5`. Great.
 
+## Changes between iteration 26 and iteration 27
+
+I have made a few tasks to the ARC 2 dataset, and it's takes quite some time to come up with a challenging ARC task, that differs from what I have previously seen.
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
+What did I do when I got the score 6. Can I recreate the score consistently?
+I'm resubmitting my programs from iteration 12 with date `2023-04-30T11-50`.
+
+Success criteria.
+- I doubt that I again get `score=6`. It may be due to random chance, but the chance may be higher when I'm using the same programs, that in the past have yielded score=6.
+- It will probably be `score=5` as it has been for several iterations.
+
+## Iteration 27
+
+[Docker image: 2023-06-30T11-01.tar](2023-06-30T11-01.tar)
+
+
+
+
+
+
+
+
