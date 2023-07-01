@@ -801,7 +801,21 @@ Success criteria.
 
 [Docker image: 2023-06-30T11-01.tar](2023-06-30T11-01.tar)
 
+This got `score 6`. Great. This confirms that the solutions within iteration 12 are still working and is yielding the same score.
 
+I wonder if all the solutions are found without doing any mutations?
+
+Things to try out:
+- Can the number of mutations be lowered to zero, and still yield the same score? Currently the time limit is 4 hours.
+- Can the time limit be lowered to 30 minutes, and still yield the same score? Currently the time limit is 4 hours.
+- Can the number of solutions be reduced to a minimum, and still yield the same score?
+- How should I organize the solutions, so that I still keep the crappy solutions. A comment in the top of the program, is this good/bad.
+- Run a few mutations with the good solutions, when no progress is made, then start mutating the bad solutions.
+- There was another time I got `score=6`. Was that the exact same tasks? If it was different, I may be able to do a crossover.
+
+## Changes between iteration 27 and iteration 28
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
 
 
 
