@@ -817,8 +817,19 @@ Things to try out:
 
 I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
 
+I have disabled mutations of existing programs. I wonder if all the solutions are found, without doing any mutations.
 
+Scenario A: If it yields the same (`score 6`), then it means that no mutations are needed.
 
+If it yields a lower score, then there can be multiple meanings:
+- Scenario B: The score 6 is due to random chance, and the solutions still works, but this time around the 6th solution wasn't found.
+- Scenario C: The lower score is due to some of the solutions being found during the mutation phase.
 
+Success criteria.
+- Best case is scenario A.
+- If it's scenario B or scenario C, then I can try tweak the max number of mutations or the time limit. And check how that impacts the score.
 
+## Iteration 28
+
+[Docker image: 2023-07-02T12-03.tar](2023-07-02T12-03.tar)
 
