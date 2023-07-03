@@ -833,3 +833,17 @@ Success criteria.
 
 [Docker image: 2023-07-02T12-03.tar](2023-07-02T12-03.tar)
 
+This got `score 5`. Ok, it's either scenario B or scenario C.
+
+The 5 solutions are found while trying out the existing solutions.
+
+The 6th solution may be found while mutating the existing solutions.
+Eventually while trying out the existing solutions due to randomness where `HashSet` and `HashMap` are being used.
+This means that it's highly sensitive to the content of the analytics dir.
+I suspect this 6th solution is found within the first few minutes while mutating.
+I can try stopping after 1 mutation, to verify this.
+
+## Changes between iteration 28 and iteration 29
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
