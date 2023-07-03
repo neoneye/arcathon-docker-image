@@ -869,6 +869,13 @@ Success criteria.
 
 [Docker image: 2023-07-03T12-45.tar](2023-07-03T12-45.tar)
 
+This got `score 5`. Ok, it's scenario B.
 
+What do I know now:
+- 5 solutions are found using the existing programs, without applying any mutations.
+- the 6th solution is found after 2 or more mutations. I have ruled out 0 mutations and 1 mutations.
+- the 6th solution is found before 4 hours of mutations.
+
+How many mutations does it take to find the 6th solution?
 
 
