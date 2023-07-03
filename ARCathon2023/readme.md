@@ -847,3 +847,28 @@ I can try stopping after 1 mutation, to verify this.
 
 I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
 
+I have set the max number of mutations to 1 mutation.
+
+Probing for a sweet spot in between these extremes:
+- Infinity: In the past I have continued for during as many iterations as possible within 4 hours. This is a long time to wait for a response. If I can get the response faster that would be nice.
+- Zero: In the previous iteration I entirely disabled the mutations. However this didn't discover the 6th solution. So 1 or more mutations are needed. I don't know how many iterations are needed.
+
+The 5 solutions are found using the existing programs without doing mutations.
+
+Scenario A: If it yields the `score 6`, then the 6th solution is found within the 1st mutation. This is best case.
+
+Scenario B: If it yields the `score 5`, then the 6th solution must require 2 or more mutations, and more probing is needed.
+If this is the scenario, then I can try 4 or 8 mutations.
+There is still the possibility that the 6th solution is found by random chance. I have confirmed it 2 times that the 6th solution can be found, (iteration 12 and iteration 27).
+
+Success criteria.
+- Best case is scenario A.
+- If it's scenario B, then more probing is needed to find the sweet spot between 0 and infinity.
+
+## Iteration 29
+
+[Docker image: 2023-07-03T12-45.tar](2023-07-03T12-45.tar)
+
+
+
+
