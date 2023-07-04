@@ -878,4 +878,26 @@ What do I know now:
 
 How many mutations does it take to find the 6th solution?
 
+## Changes between iteration 29 and iteration 30
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
+Probing for how many mutations is needed to find the 6th solution. 
+
+I'm searching for a sweet spot between 2 and infinity, but shorter than 4 hours. Let's try 64 mutations, and see if it discovers the 6th solution.
+- I have already ruled out doing 0 mutation and 1 mutation. These doesn't discover the 6th solution.
+- Running the miner for 4 hours, this does find the 6th solution.
+- The hidden ARC dataset has 100 programs. How long time does it take mutating 100 programs. 
+- Lower bound 10 seconds. Then it takes around 10 minutes to complete 64 mutations.
+- Upper bound 120 seconds. Then it takes around 2 hours to complete 64 mutations.
+
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+There is a chance that the max number of iterations can be lowered further, maybe divide by 4.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+Here the max number of iterations can be raised further, maybe multiply by 4.
+
+## Iteration 30
+
+[Docker image: 2023-07-04T12-21.tar](2023-07-04T12-21.tar)
 
