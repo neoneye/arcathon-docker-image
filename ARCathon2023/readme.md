@@ -901,3 +901,26 @@ Here the max number of iterations can be raised further, maybe multiply by 4.
 
 [Docker image: 2023-07-04T12-21.tar](2023-07-04T12-21.tar)
 
+This got `score 5`. Ok, it's scenario B.
+
+What do I know now:
+- Using solutions from iteration 12.
+- 5 tasks are solved are found while running the existing solutions.
+- The 6th task is solved while mutating the existing solutions.
+- It takes 65 mutations or more, and less than 4 hours. To find the 6th solution.
+- Eventually the 6th task is solved by random chance.
+
+## Changes between iteration 30 and iteration 31
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
+Probing for how many mutations is needed to find the 6th solution. 
+
+I'm searching for a sweet spot between 65 and infinity, but shorter than 4 hours. 
+I have seen `score=5` 3 times in a row.
+I wonder if I can find a upper bound, that yields the 6th solution.
+Let's try 8129 mutations, which I imagine will be way overkill. But what if it's not overkill, then I can go on probing forever.
+
+
+
+
