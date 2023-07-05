@@ -919,8 +919,22 @@ Probing for how many mutations is needed to find the 6th solution.
 I'm searching for a sweet spot between 65 and infinity, but shorter than 4 hours. 
 I have seen `score=5` 3 times in a row.
 I wonder if I can find a upper bound, that yields the 6th solution.
-Let's try 8129 mutations, which I imagine will be way overkill. But what if it's not overkill, then I can go on probing forever.
+Let's try 8192 mutations, which I imagine will be way overkill. But what if it's not overkill, then I can go on probing forever.
 
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+The number of mutations is so unimaginable high, so I seriously hope that this is the scenario.
+There is a chance that the max number of iterations can be lowered further, maybe divide by 4.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+Here the max number of iterations can be raised further, maybe multiply by 4.
+If this is the scenario, then multiple things can cause the 6th solution to not be found.
+- Random chance is impacting the mutations. I sort things and try to avoid ambiguous cases, but there are definitely several places that deal with `HashSet`, `HashMap` where I may have forgotten to sort the items.
+- If it's a hefty machine that lab42 is running my program on, then it may reach 8192 much sooner than 4 hours, so it never finds the program.
+I can try set the max number of mutations to 1048576. This is way more than what I can run in 4 hours on my own computer.
+
+## Iteration 31
+
+[Docker image: 2023-07-05T14-34.tar](2023-07-05T14-34.tar)
 
 
 
