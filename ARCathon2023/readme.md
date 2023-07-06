@@ -936,5 +936,22 @@ I can try set the max number of mutations to 1048576. This is way more than what
 
 [Docker image: 2023-07-05T14-34.tar](2023-07-05T14-34.tar)
 
+This got `score 6`. Ok, it's scenario A. This is what I hoped for.
 
+Previously the unknown upper bound was infinity. Now it's reduced to 8192 mutations.
+
+What do I know now:
+- Using solutions from iteration 12.
+- 5 tasks are solved are found while running the existing solutions.
+- The 6th task is solved while mutating the existing solutions.
+- It takes in the range 65..8192 mutations, and less than 4 hours. To find the 6th solution.
+- Eventually the 6th task is solved by random chance.
+
+## Changes between iteration 31 and iteration 32
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
+Probing for how many mutations is needed to find the 6th solution. 
+
+I'm searching for a sweet spot between 65 and 8192, and shorter than 4 hours. 
 
