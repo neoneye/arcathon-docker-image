@@ -955,3 +955,20 @@ Probing for how many mutations is needed to find the 6th solution.
 
 I'm searching for a sweet spot between 65 and 8192, and shorter than 4 hours. 
 
+Let's try 4096 mutations, and see if it still generates the 6th solution.
+
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+There is a chance that the max number of iterations can be lowered further, maybe divide by 2.
+a place halfway between 65 and 4096.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+a place halfway between 4096 and 8192.
+
+## Iteration 32
+
+[Docker image: 2023-07-06T12-42.tar](2023-07-06T12-42.tar)
+
+
+
+
+
