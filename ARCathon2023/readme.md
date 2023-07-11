@@ -993,4 +993,29 @@ a place halfway between 2048 and 4096.
 
 [Docker image: 2023-07-10T16-24.tar](2023-07-10T16-24.tar)
 
+This got `score 6`. Ok, it's scenario A. This is what I hoped for.
+
+Previously the unknown upper bound was 4096. Now it's reduced to 2048 mutations.
+
+## Changes between iteration 33 and iteration 34
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+
+Probing for how many mutations is needed to find the 6th solution. 
+
+I'm searching for a sweet spot between 65 and 2048, and shorter than 4 hours. 
+
+Let's try 1024 mutations, and see if it still generates the 6th solution.
+
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+There is a chance that the max number of iterations can be lowered further, maybe divide by 2.
+a place halfway between 65 and 1024.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+a place halfway between 1024 and 2048.
+
+## Iteration 34
+
+[Docker image: 2023-07-11T14-50.tar](2023-07-11T14-50.tar)
+
 
