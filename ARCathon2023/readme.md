@@ -1043,5 +1043,12 @@ a place halfway between 512 and 1024.
 
 [Docker image: 2023-07-12T12-21.tar](2023-07-12T12-21.tar)
 
+This got `score 6`. Ok, it's scenario A. This is what I hoped for.
+
+Previously the unknown upper bound was 1024. Now it's reduced to 512 mutations.
+
+## Changes between iteration 35 and iteration 36
+
+I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
 
 
