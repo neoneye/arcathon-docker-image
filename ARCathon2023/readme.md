@@ -1049,6 +1049,25 @@ Previously the unknown upper bound was 1024. Now it's reduced to 512 mutations.
 
 ## Changes between iteration 35 and iteration 36
 
-I'm making a UI for interacting with a graph representation of a single ARC task. However it's still in the early stages.
+I have made a UI for interacting with a graph representation of a single ARC task. [Here is a demo](https://youtu.be/GDQoVlyfAZQ).
+I'm not yet making use of the graph representation. This is what I will be coding in the near future.
 
+Probing for how many mutations is needed to find the 6th solution. 
+
+I'm searching for a sweet spot between 65 and 512, and shorter than 4 hours. 
+
+Let's try 256 mutations, and see if it still generates the 6th solution.
+
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+There is a chance that the max number of iterations can be lowered further, maybe divide by 2.
+a place halfway between 65 and 256.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+a place halfway between 256 and 512.
+
+## Iteration 36
+
+Github rejected this commit. Github has a 100 mb limit, so I had to make a zip file instead. It's inconsistent. Typically compressed `tar` files is named `tar.gz` or `tgz`, and doesn't use zip for compression.
+
+[Docker image: 2023-07-18T00-23.tar.zip](2023-07-18T00-23.tar.zip)
 
