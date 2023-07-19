@@ -1071,3 +1071,27 @@ Github rejected this commit. Github has a 100 mb limit, so I had to make a zip f
 
 [Docker image: 2023-07-18T00-23.tar.zip](2023-07-18T00-23.tar.zip)
 
+This got `score 6`. Ok, it's scenario A. This is what I hoped for. 
+
+Previously the unknown upper bound was 512. Now it's reduced to 256 mutations.
+
+Also it contains the new graph representation code that I have been working on for the last month, so I know that I haven't broken things too much.
+
+What do I know now:
+- While running the existing program without mutations, it solves 5 of the hidden tasks.
+- While mutating the existing programs between 65 mutations and 256 mutations, this solves 1 of the hidden tasks. And it takes less than 4 hours.
+- My logistic regression does not solve any of the hidden tasks. It solves around 50 tasks of the public dataset. So I doubt it's a way forward.
+- Adding more solutions, makes the predictions worse, causing the 6th solution to be unsolved.
+- The graph representation correctly identifies similarities between input and output shapes.
+
+## Changes between iteration 36 and iteration 37
+
+I'm working on the graph representation.
+
+
+
+
+
+
+
+
