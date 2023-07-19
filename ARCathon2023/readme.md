@@ -1088,6 +1088,23 @@ What do I know now:
 
 I'm working on the graph representation.
 
+Github doesn't like files bigger than 100mb, so i have reworked the `docker save` code, so it now a `tgz` file.  Previously it saved `tar` files. 
+Docker's documentation seems to prefer `tar` for saving and piping through gzip. However `docker load` can load `tgz` files just fine.
+
+I'm searching for a sweet spot between 65 and 256, and shorter than 4 hours. 
+
+Let's try 128 mutations, and see if it still generates the 6th solution.
+
+Scenario A: If it yields the `score 6`, then the 6th solution was found within the mutations. 
+There is a chance that the max number of iterations can be lowered further, maybe divide by 2.
+a place halfway between 65 and 128.
+
+Scenario B: If it yields the `score 5`, then the 6th solution was not found, and may be require even more mutations.
+a place halfway between 128 and 256.
+
+## Iteration 37
+
+[Docker image: 2023-07-19T15-56.tgz](2023-07-19T15-56.tgz)
 
 
 
