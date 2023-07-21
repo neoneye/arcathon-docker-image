@@ -1106,9 +1106,18 @@ a place halfway between 128 and 256.
 
 [Docker image: 2023-07-19T15-56.tgz](2023-07-19T15-56.tgz)
 
+This got `score 6`. Ok, it's scenario A. This is what I hoped for. 
 
+Previously the unknown upper bound was 256. Now it's reduced to 128 mutations.
 
+Migration from using `.tar` files, to using `.tgz` files. This confirms that it works.
 
-
-
+Thoughts:
+- The graph representation has taken much longer than I anticipated. While waiting I have been probing.
+- I began probing between iteration 26 and iteration 27, a month ago, and it has taken much longer than I imagined to narrow down how many mutations it takes.
+- Can the `score=6` be recreated again and again. Yes. Finding 5 solutions requires no mutations. It takes between 65 mutations and 128 mutations to find the 6th solution.
+- How much can I shorten the run time to find a solution. I have set it to 4 hours. I have not tried halving it.
+- Further probing can be done to narrow down the exact number of mutations, somewhere in between 65 and 128. 
+- Probing can be done to narrow down what solutions contributes to the `score=6`. What solutions can be removed without harming the score? I have no idea what combo of programs are used.
+- Adding more solutions to the pool of existing solutions, and the score drops to `score=5`.
 
