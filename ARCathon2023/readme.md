@@ -1121,3 +1121,39 @@ Thoughts:
 - Probing can be done to narrow down what solutions contributes to the `score=6`. What solutions can be removed without harming the score? I have no idea what combo of programs are used.
 - Adding more solutions to the pool of existing solutions, and the score drops to `score=5`.
 
+## Changes between iteration 37 and iteration 38
+
+Since last I have been trying out several things:
+- Experiments with encoder / decoder with ARC tasks. Terrible results.
+- Investigating Q-learning with ARC tasks.
+
+I realized that I hadn't any proper detection mechanism for split views. So I have added this.
+I have added a `SolveSplit`, that solves 17 of 800 tasks in the public ARC 1 dataset.
+
+It can only deal with splitviews where there is a separator line.
+Known problem. If there is no separator line, then `SolveSplit` will ignore the task.
+
+I wonder how `SolveSplit` does with the hidden ARC 1 dataset.
+In this docker image, I'm trying out only the `SolveSplit`, so it will perform worse than my previous high `score=6`.
+
+Scenario A: If it solves 1 or more tasks. That means that the `SolveSplit` code is useful.
+I can try combine it with my previous code, and if it improves the score.
+
+Scenario B: If it solves 0 tasks.
+
+No matter if it's scenario A or B.
+I have to deal with the scenario where there is zero-size separator in the splitview.
+
+In the logistic regression code. I have made a terrible mistake in the json format, where the predictions ids are garbage.
+this may explain why LR was unable to solve any tasks. I will have to rework the json format, and resubmit to
+determine if logistic regression is working or not.
+
+## Iteration 38
+
+[Docker image: 2023-08-14T01-00.tgz](2023-08-14T01-00.tgz)
+
+
+
+
+
+
