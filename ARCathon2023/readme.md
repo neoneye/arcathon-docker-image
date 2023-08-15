@@ -1126,6 +1126,7 @@ Thoughts:
 Since last I have been trying out several things:
 - Experiments with encoder / decoder with ARC tasks. Terrible results.
 - Investigating Q-learning with ARC tasks.
+- Made an interactive web interface for interacting the ARC tasks.
 
 I realized that I hadn't any proper detection mechanism for split views. So I have added this.
 I have added a `SolveSplit`, that solves 17 of 800 tasks in the public ARC 1 dataset.
@@ -1151,6 +1152,8 @@ determine if logistic regression is working or not.
 ## Iteration 38
 
 [Docker image: 2023-08-14T01-00.tgz](2023-08-14T01-00.tgz)
+
+This got `score 0`. Ok, it's scenario B.
 
 
 
