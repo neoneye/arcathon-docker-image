@@ -1155,7 +1155,23 @@ determine if logistic regression is working or not.
 
 This got `score 0`. Ok, it's scenario B.
 
+## Changes between iteration 38 and iteration 39
 
+Corrected the flawed json outputted by the logistic regression solver.
+The corrected json format may change the outcome.
+
+Upgraded to Rust from 1.65.0 to 1.71.1.
+
+Scenario A: If it solves 0 or more tasks, that means logistic regression is still as useless as before.
+Previously the logistic regression has been unable to solve any tasks from the hidden ARC dataset.
+This is such a tiny code change, so I doubt that this solves any of the tasks in the hidden ARC dataset.
+
+Scenario B: If it solves 1 or more tasks, that means the logistic regression is useful after all.
+I will be surprised that this happens.
+
+## Iteration 39
+
+[Docker image: 2023-08-15T15-56.tgz](2023-08-15T15-56.tgz)
 
 
 
