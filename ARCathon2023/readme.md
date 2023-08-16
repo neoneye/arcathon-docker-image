@@ -1155,6 +1155,8 @@ determine if logistic regression is working or not.
 
 This got `score 0`. Ok, it's scenario B.
 
+The `SolveSplit` doesn't solve any tasks from the hidden dataset.
+
 ## Changes between iteration 38 and iteration 39
 
 Corrected the flawed json outputted by the logistic regression solver.
@@ -1172,6 +1174,12 @@ I will be surprised that this happens.
 ## Iteration 39
 
 [Docker image: 2023-08-15T15-56.tgz](2023-08-15T15-56.tgz)
+
+This got `score 0`. Ok, it's scenario A.
+
+The `SolveLogisticRegression` doesn't solve any tasks from the hidden dataset.
+
+## Changes between iteration 39 and iteration 40
 
 
 
