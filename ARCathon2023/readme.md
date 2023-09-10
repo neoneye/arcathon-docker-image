@@ -1181,6 +1181,20 @@ The `SolveLogisticRegression` doesn't solve any tasks from the hidden dataset.
 
 ## Changes between iteration 39 and iteration 40
 
+Improved the `SolveSplit` so it now solves 27 of 800 ARC tasks. This is an improvement of 10 tasks.
+Let's see if it can solve one of the tasks in the hidden ARC dataset.
 
+I have experimented with ViT (vision transformers) and made an image generator.
+The ViT is very data hungry and I'm not yet seeing any progress. Too soon to determine if it will work or not.
 
+Scenario A: If the scores is 1 or greater, then the `SolveSplit` solves 1 or more tasks.
+Afterwards in next iteration, enable the LODA solver and see if it works together.
+It may be there is overlap and both solvers solve the same task.
+It may be that there is no overlap, this is best case scenario.
+
+Scenario B: If it scores zero, then the `SolveSplit` is still as useless as before.
+
+## Iteration 40
+
+[Docker image: 2023-09-10T23-43.tgz](2023-09-10T23-43.tgz)
 
