@@ -1198,3 +1198,9 @@ Scenario B: If it scores zero, then the `SolveSplit` is still as useless as befo
 
 [Docker image: 2023-09-10T23-43.tgz](2023-09-10T23-43.tgz)
 
+This got `score 0`. Ok, it's scenario B.
+
+## Changes between iteration 40 and iteration 41
+
+
+
