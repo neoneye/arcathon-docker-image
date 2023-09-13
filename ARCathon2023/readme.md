@@ -1202,5 +1202,27 @@ This got `score 0`. Ok, it's scenario B.
 
 ## Changes between iteration 40 and iteration 41
 
+The `ShapeIdentification` code, now rotates the images by 45 degrees, so it better can recognize diagonal `ShapeType`s.
+Huge thanks to Douglas Miles for this 45 degree rotation idea.
+
+I have tweaked logistic regression, so it now solves 3 more tasks.
+- Now solves 54 tasks of 800 tasks.
+- Previously solved 51 tasks of 800 tasks.
+
+The tweaks I have done to logistic regression:
+- Making use of the 45 degree rotated shape types, so it may be improve recognition of diagonal shapes.
+- Now running 5 iterations where the previous prediction is used as input for the next prediction.
+
+Scenario A: If the score is 1 or greater, then the `SolveLogisticRegression` solves 1 or more tasks.
+
+Scenario B: If the score is 0, then the `SolveLogisticRegression` is still useless.
+
+## Iteration 41
+
+[Docker image: 2023-09-13T14-04.tgz](2023-09-13T14-04.tgz)
+
+
+
+
 
 
