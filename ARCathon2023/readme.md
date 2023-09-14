@@ -1221,8 +1221,21 @@ Scenario B: If the score is 0, then the `SolveLogisticRegression` is still usele
 
 [Docker image: 2023-09-13T14-04.tgz](2023-09-13T14-04.tgz)
 
+Waiting for feedback with score.
 
+## Changes between iteration 41 and iteration 42
 
+I have tweaked logistic regression, so it now solves 2 more tasks.
+- Now solves 56 tasks of 800 tasks.
+- Previously solved 54 tasks of 800 tasks.
+
+Scenario A: If the score is 1 or greater, then the `SolveLogisticRegression` solves 1 or more tasks.
+
+Scenario B: If the score is 0, then the `SolveLogisticRegression` is still useless.
+
+## Iteration 42
+
+[Docker image: 2023-09-15T01-15.tgz](2023-09-15T01-15.tgz)
 
 
 
