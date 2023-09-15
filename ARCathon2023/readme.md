@@ -1221,7 +1221,7 @@ Scenario B: If the score is 0, then the `SolveLogisticRegression` is still usele
 
 [Docker image: 2023-09-13T14-04.tgz](2023-09-13T14-04.tgz)
 
-Waiting for feedback with score.
+This got `score 1`. Scenario A. The first confirmation that my logistic regression approach is working.
 
 ## Changes between iteration 41 and iteration 42
 
@@ -1229,13 +1229,29 @@ I have tweaked logistic regression, so it now solves 2 more tasks.
 - Now solves 56 tasks of 800 tasks.
 - Previously solved 54 tasks of 800 tasks.
 
-Scenario A: If the score is 1 or greater, then the `SolveLogisticRegression` solves 1 or more tasks.
+Scenario A: If the score is 2 or greater, then the `SolveLogisticRegression` solves 2 or more tasks. Which will be an improvement.
 
-Scenario B: If the score is 0, then the `SolveLogisticRegression` is still useless.
+Scenario B: If the score is 1, then the `SolveLogisticRegression` may be solving the same task as in previous iteration.
+Or it may be a different task it is solving.
+
+Scenario C: If the score is 0, then I may have messed up something in the `SolveLogisticRegression` code so it no longer solves any tasks.
 
 ## Iteration 42
 
 [Docker image: 2023-09-15T01-15.tgz](2023-09-15T01-15.tgz)
+
+This got `score 1`. Scenario B. The logistic regression approach is still working. No improvement, no worsening.
+
+Thought:
+If there is overlap between the logistic regression and the genetic algorithm, then the the score be 6.
+If there is no overlap, then solved tasks are different, and the score will be 6+1, so score 7.
+
+Thought:
+How many more tasks do I have to solve on the public 800 ARC tasks in order to solve 2 tasks from the 100 hidden ARC tasks?
+Currently I'm solving 56 tasks (7% of 800). Will I have to solve twice as many?
+
+## Changes between iteration 42 and iteration 43
+
 
 
 
