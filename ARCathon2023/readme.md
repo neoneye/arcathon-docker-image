@@ -1252,6 +1252,25 @@ Currently I'm solving 56 tasks (7% of 800). Will I have to solve twice as many?
 
 ## Changes between iteration 42 and iteration 43
 
+Made it possible to accumulate predictions from multiple solvers. So now it's running both logistic regression and genetic algorithm. An ensemble of solvers.
+Until now only been 1 solver type has been able to run.
+
+Improved the logistic regression so it solves 57 tasks of 800 tasks.
+
+Scenario A: If the score is 7, then the logistic regression still solves 1 task. And the genetic algorithm solves 6 tasks.
+This is the sunshine scenario.
+
+Scenario B: If the score is 6, then the there is overlap between the set of tasks solved by logistic regression and tasks solved by genetic algorithm.
+
+Scenario C: If the score is 6, and if I have broken the logistic regression while improving it, then the genetic algorithm solves 6 tasks.
+Then I will have to unwind my improvements to the logistic regression code (the commits that broke it).
+
+Scenario D: If the score is 5 or less, then I have messed up in some way. I have made cherry-picking mechanism that takes the best 3 predictions.
+If I have messed it up, then the score may be impacted.
+
+## Iteration 43
+
+[Docker image: 2023-09-18T21-31.tgz](2023-09-18T21-31.tgz)
 
 
 
