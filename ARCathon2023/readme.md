@@ -1272,5 +1272,8 @@ If I have messed it up, then the score may be impacted.
 
 [Docker image: 2023-09-18T21-31.tgz](2023-09-18T21-31.tgz)
 
+This got `score 1`. Scenario D. I have broken something. It does solve 1 task, I guess via the logistic regression solver. However it doesn't seem like 
+there is any contribution of solved tasks from the genetic algorithm.
+
 
 
