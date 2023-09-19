@@ -1275,5 +1275,30 @@ If I have messed it up, then the score may be impacted.
 This got `score 1`. Scenario D. I have broken something. It does solve 1 task, I guess via the logistic regression solver. However it doesn't seem like 
 there is any contribution of solved tasks from the genetic algorithm.
 
+## Changes between iteration 43 and iteration 44
 
+Investigated what was causing havoc. It seems like only the logistic regression has been running and the genetic algorithm has been disabled.
+
+I have now entirely disabled the `resume_from_last_snapshot` feature flag, so I'm sure this isn't the culprit.
+
+The `SolveLogisticRegression` works when it's not being emulated.
+However running a `x86_64` docker image on a `M1` chip, then `SolveLogisticRegression` takes forever to run, that I have to abort it before it solves a single task.
+I cannot be certain it's able to solve anything on an `x86_64` chip.
+
+Scenario A: If the score is 5 or less, then I have messed up in some way.
+And introducing the `resume_from_last_snapshot` feature flag wasn't sufficient to fix it.
+I guess the chance is 60% for this scenario.
+
+Scenario B: If the score is 7, then the logistic regression still solves 1 task. And the genetic algorithm solves 6 tasks.
+This is the sunshine scenario.
+
+Scenario C: If the score is 6, then the there is overlap between the set of tasks solved by logistic regression and tasks solved by genetic algorithm.
+
+Scenario D: If the score is 6, and if I have broken the logistic regression while improving it, then the genetic algorithm solves 6 tasks.
+Then I will have to unwind my improvements to the logistic regression code (the commits that broke it).
+Since it was able to solve 1 task possible by logistic regression, then I doubt this is the case.
+
+## Iteration 44
+
+[Docker image: 2023-09-19T16-19.tgz](2023-09-19T16-19.tgz)
 
