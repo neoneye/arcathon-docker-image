@@ -1312,3 +1312,23 @@ What solves what:
 - The genetic algorithm solves 1 tasks with a mutated program.
 - The `SolveSplit` does not solve anything.
 
+## Changes between iteration 44 and iteration 45
+
+Improved the logistic regression so it solves 61 tasks of 800 tasks. And partially solves 3 tasks.
+
+SolveLogisticRegression can now deal with tasks that have 2 or more training pairs, this helped solves a few more tasks.
+Previously it could only handle 1 test pair.
+
+Scenario A: If the score is 8, then it's an improvement. Sunshine scenario.
+
+Scenario B: If the score is 7, then it's status quo.
+
+Scenario C: If the score is 6, then I have worsened the logistic regression solver so much that it solves nothing.
+
+Scenario D: If the score is 5 or less, then I have seriously messed up.
+
+## Iteration 45
+
+[Docker image: 2023-09-21T23-25.tgz](2023-09-21T23-25.tgz)
+
+
