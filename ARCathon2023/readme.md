@@ -1302,3 +1302,13 @@ Since it was able to solve 1 task possible by logistic regression, then I doubt 
 
 [Docker image: 2023-09-19T16-19.tgz](2023-09-19T16-19.tgz)
 
+This got `score 7`. Scenario B. This is a new high for me. Yay.
+
+My previous best `score 6` was 5 months ago in iteration 12.
+
+What solves what:
+- The logistic regression solves 1 task.
+- The genetic algorithm solves 5 tasks using the existing programs.
+- The genetic algorithm solves 1 tasks with a mutated program.
+- The `SolveSplit` does not solve anything.
+
