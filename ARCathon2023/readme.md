@@ -1331,4 +1331,9 @@ Scenario D: If the score is 5 or less, then I have seriously messed up.
 
 [Docker image: 2023-09-21T23-25.tgz](2023-09-21T23-25.tgz)
 
+This got `score 7`. Scenario B. This is status quo.
+
+It's quite a big code change to how the logistic regression code is working, so I'm just happy that it's still working.
+
+## Changes between iteration 45 and iteration 46
 
