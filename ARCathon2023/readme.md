@@ -1337,3 +1337,26 @@ It's quite a big code change to how the logistic regression code is working, so 
 
 ## Changes between iteration 45 and iteration 46
 
+Experiments training Llama2 7B with `alpaca` formatted examples of basic image manipulations.
+I have been using [Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl) for automated training.
+
+This Rust project does not yet include any LLM code.
+
+Tweaked logistic regression so it solves 1 more task.
+
+Improved the logistic regression so it solves 1 more task. Now it solves 62 tasks of 800 tasks. And partially solves 3 tasks.
+Let's see if this makes a difference.
+
+Scenario A: If the score is 8, then it's sunshine scenario.
+
+Scenario B: If the score is 7, then it's status quo.
+I may have broken things while tweaking the logistic regression, so this scenario may not happen.
+
+Scenario C: If the score is 6, then I have broken something with the logistic regression code.
+And I may have to roll back.
+
+## Iteration 46
+
+[Docker image: 2023-10-06T00-20.tgz](2023-10-06T00-20.tgz)
+
+
