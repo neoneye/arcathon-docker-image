@@ -1359,4 +1359,25 @@ And I may have to roll back.
 
 [Docker image: 2023-10-06T00-20.tgz](2023-10-06T00-20.tgz)
 
+Awaiting feedback.
 
+## Changes between iteration 46 and iteration 47
+
+Improved the logistic regression so it solves a few more task. Now it solves 69 tasks of 800 tasks. And partially solves 2 tasks.
+Let's see if this makes a difference.
+
+Scenario A: If the score is 8, then it's sunshine scenario.
+
+Scenario B: If the score is 7, then it's status quo.
+I may have broken things while tweaking the logistic regression, so this scenario may not happen.
+
+Scenario C: If the score is 6, then I have broken something with the logistic regression code.
+And I may have to roll back.
+
+Scenario D: If feedback on my last submission turns out to have score=8 (I doubt it). And my current submission gets score=7.
+Then I must have broken something.
+
+
+## Iteration 47
+
+[Docker image: 2023-10-09T01-12.tgz](2023-10-09T01-12.tgz)
