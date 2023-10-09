@@ -1359,7 +1359,7 @@ And I may have to roll back.
 
 [Docker image: 2023-10-06T00-20.tgz](2023-10-06T00-20.tgz)
 
-Awaiting feedback.
+This got `score 8`. Scenario A. This is sunshine scenario.
 
 ## Changes between iteration 46 and iteration 47
 
@@ -1374,7 +1374,7 @@ I may have broken things while tweaking the logistic regression, so this scenari
 Scenario C: If the score is 6, then I have broken something with the logistic regression code.
 And I may have to roll back.
 
-Scenario D: If feedback on my last submission turns out to have score=8 (I doubt it). And my current submission gets score=7.
+Scenario D: If feedback on my last submission turns out to have score=8 (I doubt it. Oh, it did happen, yay). And my current submission gets score=7.
 Then I must have broken something.
 
 
