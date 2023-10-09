@@ -1361,6 +1361,8 @@ And I may have to roll back.
 
 This got `score 8`. Scenario A. This is sunshine scenario.
 
+The code for this version is in the loda-rust repo: [commit `430f3d4b1182a40058230e54564b8e6c482e1509`](https://github.com/loda-lang/loda-rust/commit/430f3d4b1182a40058230e54564b8e6c482e1509).
+
 ## Changes between iteration 46 and iteration 47
 
 Improved the logistic regression so it solves a few more task. Now it solves 69 tasks of 800 tasks. And partially solves 2 tasks.
