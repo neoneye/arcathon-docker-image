@@ -1377,7 +1377,15 @@ And I may have to roll back.
 Scenario D: If feedback on my last submission turns out to have score=8 (I doubt it. Oh, it did happen, yay). And my current submission gets score=7.
 Then I must have broken something.
 
-
 ## Iteration 47
 
 [Docker image: 2023-10-09T01-12.tgz](2023-10-09T01-12.tgz)
+
+This got `score 7`. Scenario D. I have broken something.
+
+I will continue with the logistic regression as it is, despite this version performing worse.
+It solves more tasks on the public ARC tasks. I will try to get it to solve even more.
+With more improvements, if it gets stuck on `score 7`, then I may roll back to iteration 46 that scored 8.
+
+## Changes between iteration 47 and iteration 48
+
