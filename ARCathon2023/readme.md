@@ -1391,3 +1391,17 @@ With more improvements, if it gets stuck on `score 7`, then I may roll back to i
 
 ## Changes between iteration 47 and iteration 48
 
+I have improved on the logistic regression so it now solves 1 more task.
+Out of the 800 tasks in the ARC 1 dataset.
+It fully solves 70 tasks. It partially solves 2 tasks.
+
+Scenario A: If the score is 8, then it's sunshine scenario.
+
+Scenario B: If the score is 7, then it's status quo.
+
+Scenario C: If the score is 6, then I have broken something with the logistic regression code.
+
+## Iteration 48
+
+[Docker image: 2023-10-11T01-08.tgz](2023-10-11T01-08.tgz)
+
