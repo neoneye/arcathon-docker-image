@@ -1405,3 +1405,15 @@ Scenario C: If the score is 6, then I have broken something with the logistic re
 
 [Docker image: 2023-10-11T01-08.tgz](2023-10-11T01-08.tgz)
 
+This got `score 6`. Scenario C. My improvements have worsened the logistic regression code, so it no longer solves any tasks.
+
+I assumed the more tasks that my logistic regression code solved on the public ARC 1 dataset, the more it would be able to solve on the hidden ARC 1 dataset.
+I'm forgetting the public dataset have one distribution and the hidden dataset have another distributions. It's two different distributions.
+Optimizing for one distribution may harm the other distribution.
+
+Thoughts:
+I'm considering random feature flipping. Maybe doing 10 logistic regression per tasks, with random features enabled/disabled.
+For this I need a ranking system that discards the worst predictions, and keeps the best candidates.
+
+## Changes between iteration 48 and iteration 49
+
