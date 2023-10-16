@@ -1417,3 +1417,25 @@ For this I need a ranking system that discards the worst predictions, and keeps 
 
 ## Changes between iteration 48 and iteration 49
 
+I have improved on the logistic regression so it now also can deal with tasks where input size and output size is different.
+Until now logistic regression has only been able to process tasks where the input and output size had the same sizes.
+
+Out of the 800 tasks in the ARC 1 dataset.
+It fully solves 70 tasks. It partially solves 6 tasks.
+
+I have fixed a typo in the way `center_row_right` was computed, where x and y was swapped.
+Interestingly this mistake caused a higher number of tasks to get solved in the public ARC dataset.
+Fixing the mistake and the number of tasks solve changed from 72 to 69.
+Having fixed the typo where x and y was swapped. Hopefully this prevents the bias for the public ARC dataset, 
+so it's able to solve more than 1 task in the hidden dataset.
+
+Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
+
+Scenario B: If the score is 7, then 1 task gets solved with logistic regression.
+
+Scenario C: If the score is 6, then something is still broken with the logistic regression code.
+
+## Iteration 49
+
+[Docker image: 2023-10-16T02-07.tgz](2023-10-16T02-07.tgz)
+
