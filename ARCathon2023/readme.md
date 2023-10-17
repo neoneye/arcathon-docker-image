@@ -1439,3 +1439,9 @@ Scenario C: If the score is 6, then something is still broken with the logistic 
 
 [Docker image: 2023-10-16T02-07.tgz](2023-10-16T02-07.tgz)
 
+This got `score 6`. Scenario C. The logistic regression solver, doesn't solve any tasks.
+
+## Changes between iteration 49 and iteration 50
+
+
+
