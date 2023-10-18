@@ -1443,5 +1443,25 @@ This got `score 6`. Scenario C. The logistic regression solver, doesn't solve an
 
 ## Changes between iteration 49 and iteration 50
 
+Upgraded to a newer `linfa` package.
 
+Out of the 800 ARC tasks, 108 task was aborted due to the error: `MoreThuenteLineSearch`.
+I have made a retry mechanism that tries invoking the fit() function, with a lower `max_iterations`.
+So whenever it encounters the error: `MoreThuenteLineSearch: Search direction must be a descent direction.`
+then it tries again. This solves 1 more task than previously.
+
+Added gravity images. This solves 1 more task than previously.
+
+Tiny improvements to the logistic regression code.
+It fully solves 70 tasks. It partially solves 8 tasks.
+
+Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
+
+Scenario B: If the score is 7, then 1 task gets solved with logistic regression.
+
+Scenario C: If the score is 6, then something is still broken with the logistic regression code.
+
+## Iteration 50
+
+[Docker image: 2023-10-18T02-14.tgz](2023-10-18T02-14.tgz)
 
