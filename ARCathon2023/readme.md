@@ -1453,7 +1453,7 @@ then it tries again. This solves 1 more task than previously.
 Added gravity images. This solves 1 more task than previously.
 
 Tiny improvements to the logistic regression code.
-It fully solves 70 tasks. It partially solves 8 tasks.
+It fully solves 72 tasks. It partially solves 6 tasks.
 
 Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
 
