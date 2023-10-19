@@ -1465,3 +1465,13 @@ Scenario C: If the score is 6, then something is still broken with the logistic 
 
 [Docker image: 2023-10-18T02-14.tgz](2023-10-18T02-14.tgz)
 
+This got `score 6`. Scenario C. The logistic regression solver, doesn't solve any tasks.
+
+Thoughts:
+- Maybe I provide too many features for logistic regression. What if I provide fewer?
+
+## Changes between iteration 50 and iteration 51
+
+
+
+
