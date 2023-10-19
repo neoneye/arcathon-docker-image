@@ -1472,6 +1472,24 @@ Thoughts:
 
 ## Changes between iteration 50 and iteration 51
 
+Made the logistic regression solver run in parallel, so it finishes faster depending on the number of cores on the server.
 
+Enabled lots of features related to diagonal histograms. Hopefully it will be able to solve 1 of the hidden ARC tasks that contains diagonal structures.
 
+I have on purpose focused on solving much different tasks than I have solved the logistic regression code in the past.
+It fully solves 59 tasks. It partially solves 6 tasks.
+Big overlap with what it has solved in the past. There is a few new ones that it hasn't solved before.
+
+Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
+I doubt that this scenario happens.
+
+Scenario B: If the score is 7, then 1 task gets solved with logistic regression.
+My primary goal. I hope to get a confirmation that the logistic regression code is running. 
+If it solves just one task, then it will confirm that the logistic regression code is working.
+
+Scenario C: If the score is 6, then something is still broken with the logistic regression code.
+
+## Iteration 51
+
+[Docker image: 2023-10-20T01-22.tgz](2023-10-20T01-22.tgz)
 
