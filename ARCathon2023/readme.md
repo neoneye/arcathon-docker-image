@@ -1493,3 +1493,8 @@ Scenario C: If the score is 6, then something is still broken with the logistic 
 
 [Docker image: 2023-10-20T01-22.tgz](2023-10-20T01-22.tgz)
 
+This got `score 6`. Scenario C. The logistic regression solver, doesn't solve any tasks.
+
+Since I got score 8, I have changed lots of things in the logistic regression solver. It would be nice to see if I can reproduce that score.
+This would confirm that the many changes hasn't entirely broken the logistic regression solver.
+
