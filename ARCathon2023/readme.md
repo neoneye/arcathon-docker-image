@@ -1498,3 +1498,43 @@ This got `score 6`. Scenario C. The logistic regression solver, doesn't solve an
 Since I got score 8, I have changed lots of things in the logistic regression solver. It would be nice to see if I can reproduce that score.
 This would confirm that the many changes hasn't entirely broken the logistic regression solver.
 
+## Changes between iteration 51 and iteration 52
+
+Not getting anywhere with the logistic regression. So I have partially rolled back to old commit a049260e29723dad027aa89658a95b5e2aa70e70,
+this got `score=8`.
+
+I have taken the best parts from my newer code and reapplied it to the old code.
+
+Unlike the old code, this new code: 
+- Can process tasks where `input_size` is different than `output_size`.
+- Runs uses `rayon` for running the solver in parallel.
+- Deals with the error: `MoreThuenteLineSearch: Search direction must be a descent direction.`.
+- Made `linfa` non-optional
+
+I'm hesitant about migrating more functionality for now, since it may be what is causing the score to drop to zero.
+It will be nice to get a confirmation that things still works.
+
+Newer things that I have not migrated over:
+- Bugfix where I had made a typo with the x and y axis in the line `let center_row_right: Image = match center_row.right_columns(y_reverse)`. This may be what is solving tasks from the hidden ARC dataset, so I have not applied the bugfix.
+- Support for 11 colors. This extra color is used for the outside area.
+- Feature flipping. All the places that had `enable_` prefix. I don't have them.
+
+When I have gotten a confirmation, then I can migrate more of the newer functionality.
+
+Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
+It should end up in this scenario, since the code is very close to the old code, that did score 8.
+This will confirm that my changes so far hasn't broken things, and that I can proceed with the migration of newer code.
+
+Scenario B: If the score is 7, then 1 task gets solved with logistic regression.
+If this scenario happens, then I have not done a good job of rolling back to the old code.
+It's a mix of old and new code, so it's not an exact rollback.
+So this scenario is also likely.
+
+Scenario C: If the score is 6, then something is still broken with the logistic regression code.
+I have been getting score 6 for several iterations. Maybe it's something very basic that I have messed up.
+
+## Iteration 52
+
+[Docker image: 2023-10-22T12-30.tgz](2023-10-22T12-30.tgz)
+
+
