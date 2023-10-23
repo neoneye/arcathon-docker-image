@@ -1537,4 +1537,22 @@ I have been getting score 6 for several iterations. Maybe it's something very ba
 
 [Docker image: 2023-10-22T12-30.tgz](2023-10-22T12-30.tgz)
 
+I don't know yet what the score is.
 
+## Changes between iteration 52 and iteration 53
+
+I have merged the old code and the new code. So it solves the same tasks as the old code. 
+The new code has `enable_feature_xyz` and is currently turned off.
+
+Dependency chain problem, breaking my docker image creation process. Older versions of the `ahash` dependency has been removed from crates.io.
+I have made a kludgy workaround, so my `Cargo.lock` is being used.
+
+Scenario A: If the score is 8, then 2 tasks gets solved with logistic regression.
+
+Scenario B: If the score is 7, then 1 task gets solved with logistic regression.
+
+Scenario C: If the score is 6, then something is still broken with the logistic regression code.
+
+## Iteration 53
+
+[Docker image: 2023-10-24T01-03.tgz](2023-10-24T01-03.tgz)
