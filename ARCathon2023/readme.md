@@ -1537,7 +1537,18 @@ I have been getting score 6 for several iterations. Maybe it's something very ba
 
 [Docker image: 2023-10-22T12-30.tgz](2023-10-22T12-30.tgz)
 
-I don't know yet what the score is.
+The wait for this was long, so I made the next submission without knowing the score.
+Finally I got an answer. This got `score 8`. Scenario A. Great, this is the best that I hoped for.
+So I have recreated the behavior of the original logistic regression code.
+
+Learning: It's making use of newer code for processing tasks in parallel, previously it ran sequential (slower). 
+The way data is loaded into the logistic regression solver is also nicer.
+
+Learning: Deals with the error: `MoreThuenteLineSearch: Search direction must be a descent direction.`, does not improve the score.
+
+Learning: Processing tasks where `input_size != output_size` does not improve the score.
+
+Learning: Upgrading to the newest `linfa` package has not broken anything.
 
 ## Changes between iteration 52 and iteration 53
 
