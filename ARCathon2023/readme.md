@@ -1574,4 +1574,21 @@ It seems like the logistic regression solver still doesn't solve any tasks where
 
 ## Changes between iteration 53 and iteration 54
 
+Fixed a typo that has long been haunting me. The `context_input_x_reverse` and `context_input_y_reverse` was misspelled, causing asymmetric image manipulation.
+Oddly fixing the typo causes the logistic regression solver to worsen. It solves 3 fewer tasks. Now out of the 800 ARC tasks: 64 fully solved, 6 partially solved.
 
+With the typo it solves 2 of the hidden ARC tasks. I wonder how many it solves if I fix the typo, this is my goal.
+
+I have tried fixing it earlier in the iterations 48..50, but I had too many things going on to exactly pinpoint what was causing the logistic regression to solve 0 tasks.
+
+Scenario A: If the score is 8, then 2 tasks gets solve with logistic regression. Then all is good, and I can burry this typo.
+
+Scenario B: If the score is 7, then 1 tasks get solve with logistic regression. 
+If this is the case, then I may have to reintoduce the typo. I can't decide with myself wether to keep it or burry it.
+
+Scenario C: If the score is 6, then 0 tasks gets solved with logistic regression. The typo is improving the ability to solve tasks. This goes against my intuition.
+If this is the case, then I will have to reintoduce the typo.
+
+## Iteration 54
+
+[Docker image: 2023-10-27T23-59.tgz](2023-10-27T23-59.tgz)
