@@ -1567,3 +1567,11 @@ Scenario C: If the score is 6, then something is still broken with the logistic 
 ## Iteration 53
 
 [Docker image: 2023-10-24T01-03.tgz](2023-10-24T01-03.tgz)
+
+The wait for this was even longer. This got `score 8`. Scenario A. Great, this is the best that I hoped for.
+
+It seems like the logistic regression solver still doesn't solve any tasks where `input_size != output_size`.
+
+## Changes between iteration 53 and iteration 54
+
+
