@@ -1592,3 +1592,26 @@ If this is the case, then I will have to reintoduce the typo.
 ## Iteration 54
 
 [Docker image: 2023-10-27T23-59.tgz](2023-10-27T23-59.tgz)
+
+Awaiting feedback.
+
+## Changes between iteration 54 and iteration 55
+
+Now using logistic regression to make 3 predictions for every task.
+
+With the public ARC dataset, 800 tasks.
+- Logistic regression variant 0 - fully solves 64 tasks. partially solves 6 tasks.
+- Logistic regression variant 1 - fully solves 8 tasks. partially solves ? tasks.
+- Logistic regression variant 2 - fully solves 5 tasks. partially solves ? tasks.
+
+I'm awaiting feedback about my previous submission, and it's going to impact my reasoning abou this submission.
+
+Scenario A: If the score is 8, then 2 tasks gets solve with logistic regression.
+
+Scenario B: If the score is 7, then 1 tasks get solve with logistic regression. 
+
+Scenario C: If the score is 6, then 0 tasks gets solved with logistic regression.
+
+## Iteration 55
+
+[Docker image: 2023-10-29T23-38.tgz](2023-10-29T23-38.tgz)
