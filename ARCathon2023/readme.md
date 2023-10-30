@@ -1593,7 +1593,9 @@ If this is the case, then I will have to reintoduce the typo.
 
 [Docker image: 2023-10-27T23-59.tgz](2023-10-27T23-59.tgz)
 
-Awaiting feedback.
+This got `score 7`. Scenario A. It solves 1 task using logistic regression.
+
+So the consequence of the typo `context_input_x_reverse` and `context_input_y_reverse`. Is that 1 task no longer can be solved.
 
 ## Changes between iteration 54 and iteration 55
 
