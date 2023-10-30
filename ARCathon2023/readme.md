@@ -1593,9 +1593,10 @@ If this is the case, then I will have to reintoduce the typo.
 
 [Docker image: 2023-10-27T23-59.tgz](2023-10-27T23-59.tgz)
 
-This got `score 7`. Scenario A. It solves 1 task using logistic regression.
+This got `score 7`. Scenario B. It solves 1 task using logistic regression. Not as well as before.
 
-So the consequence of the typo `context_input_x_reverse` and `context_input_y_reverse`. Is that 1 task no longer can be solved.
+So the consequence of the typo `context_input_x_reverse` and `context_input_y_reverse`. That is that 1 task no longer can be solved.
+I'm considering reintroducing the typo.
 
 ## Changes between iteration 54 and iteration 55
 
@@ -1617,3 +1618,9 @@ Scenario C: If the score is 6, then 0 tasks gets solved with logistic regression
 ## Iteration 55
 
 [Docker image: 2023-10-29T23-38.tgz](2023-10-29T23-38.tgz)
+
+This got `score 7`. Scenario B. It solves 1 task using logistic regression.
+
+So supplementing every prediction with 2 extra predictions, didn't improve the score, nor worsen the score.
+I had hoped that it would explore new areas.
+
