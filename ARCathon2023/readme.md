@@ -1624,3 +1624,28 @@ This got `score 7`. Scenario B. It solves 1 task using logistic regression.
 So supplementing every prediction with 2 extra predictions, didn't improve the score, nor worsen the score.
 I had hoped that it would explore new areas.
 
+## Changes between iteration 55 and iteration 56
+
+Reintroduced the embarrasing typo, that can be turned on/off with `enable_typo_for_center_row_right_columns` flag.
+
+Tweaked parameters for variant 1 it solves 11 tasks not previously solved by logistic regression.
+
+Tweaked parameters for variant 2 it solves 2 tasks not previously solved by logistic regression.
+
+Scenario A: If the score is 9, then 3 tasks gets solve with logistic regression.
+This will mean 
+Variant 0 is solves the same 2 hidden tasks as in iteration 54.
+And variant 1 or variant 2, is solving a new task from the hidden ARC data set.
+Further tweaking, may be to variant 2, since it contains the fewest new solved tasks.
+
+Scenario B: If the score is 8, then 2 tasks gets solve with logistic regression.
+Variant 0 is supposed to solve the same 2 hidden tasks as in iteration 54.
+Ending up in this case, it will mean that neither variant 1 nor variant 2 solves any tasks, and can be tweaked.
+
+Scenario C: If the score is 7, then 1 tasks get solve with logistic regression. 
+I have worsened things, and will have to investigate what I have broken.
+
+## Iteration 56
+
+[Docker image: 2023-10-31T17-41.tgz](2023-10-31T17-41.tgz)
+
