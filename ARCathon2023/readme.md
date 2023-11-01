@@ -1649,3 +1649,7 @@ I have worsened things, and will have to investigate what I have broken.
 
 [Docker image: 2023-10-31T17-41.tgz](2023-10-31T17-41.tgz)
 
+This got `score 8`. Scenario B. It solves 2 task using logistic regression.
+The logistic regression solves the same 2 hidden tasks solved as in iteration 53.
+The new variant 1 and variant 2, doesn't solve any tasks, so I can tweak these.
+
