@@ -1653,3 +1653,22 @@ This got `score 8`. Scenario B. It solves 2 task using logistic regression.
 The logistic regression solves the same 2 hidden tasks solved as in iteration 53.
 The new variant 1 and variant 2, doesn't solve any tasks, so I can tweak these.
 
+## Changes between iteration 56 and iteration 57
+
+The goal of this submission is to confirm my hypothesis.
+It seems like it's only `variant=0` that does the heavy lifting, and nothing is done by `variant=1` nor `variant=2`.
+
+Scenario A: If the score is 8, then 2 tasks gets solve with logistic regression.
+This is what I hope for.
+
+Scenario B: If the score is 7, then 1 task get solve with logistic regression. 
+I have worsened things. Then either `variant=1` or `variant=2` has contributed in finding a solution. Unclear which one finds the solutions.
+
+Scenario C: If the score is 8, then 0 tasks get solve with logistic regression. 
+I have worsened things. Then `variant=0` is not contributing. 
+And either `variant=1` or `variant=2` is contributed in finding the 2 solutions. Unclear which one finds the solutions.
+
+## Iteration 57
+
+[Docker image: 2023-11-03T10-04.tgz](2023-11-03T10-04.tgz)
+
