@@ -1672,3 +1672,5 @@ And either `variant=1` or `variant=2` is contributed in finding the 2 solutions.
 
 [Docker image: 2023-11-03T10-04.tgz](2023-11-03T10-04.tgz)
 
+This got `score 8`. Scenario A. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
+
