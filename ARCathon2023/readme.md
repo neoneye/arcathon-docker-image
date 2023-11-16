@@ -1694,3 +1694,24 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-16T13-01.tgz](2023-11-16T13-01.tgz)
 
+## Changes between iteration 58 and iteration 59
+
+Immediately after submitting last docker image, I realized I had made a mistake. I forgot to check if `denoise_type5` actually solves some novel tasks, it turned out disappointing. It fully solves zero tasks. It solves 3 tasks partially.
+
+Now I'm tweaking parameters for logistic regression and found a good combo of parameters that fully solves 5 tasks and partially solves 6 tasks, out of the 800 public tasks.
+
+Scenario A: If the score is 9, then 3 tasks gets solve with logistic regression.
+This is what I hope for. And that means that my tweaks is useful.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` solves 1 of the hiddent tasks, and `variant=2` solves zero tasks.
+
+Scenario B: If the score is 8, then 2 task get solve with logistic regression. 
+This is status quo.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` and `variant=2` solves zero tasks.
+So I can continue tweaking `variant=1` and `variant=2`.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 58
+
+[Docker image: 2023-11-17T00-21.tgz](2023-11-17T00-21.tgz)
+
