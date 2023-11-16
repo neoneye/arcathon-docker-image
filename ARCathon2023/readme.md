@@ -1674,3 +1674,23 @@ And either `variant=1` or `variant=2` is contributed in finding the 2 solutions.
 
 This got `score 8`. Scenario A. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
 
+## Changes between iteration 57 and iteration 58
+
+I have been experimenting making datasets for LLM training. During this I made a useful `denoise_type5` function.
+With this docker image I want to know if this denoise function can help solve new tasks.
+
+Scenario A: If the score is 9, then 3 tasks gets solve with logistic regression.
+This is what I hope for. And that means that the `denoise_type5` is useful.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` solves 1 of the hiddent tasks, and `variant=2` solves zero tasks.
+
+Scenario B: If the score is 8, then 2 task get solve with logistic regression. 
+This is status quo. So the `denoise_type5` doesn't help solve anything.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` and `variant=2` solves zero tasks.
+So I can continue tweaking `variant=1` and `variant=2`.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 58
+
+[Docker image: 2023-11-16T13-01.tgz](2023-11-16T13-01.tgz)
+
