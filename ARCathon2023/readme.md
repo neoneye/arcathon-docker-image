@@ -1694,6 +1694,10 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-16T13-01.tgz](2023-11-16T13-01.tgz)
 
+This got `score 8`. Scenario B. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
+The `denoise_type5` doesn't help. The `variant=1` is not helping and can be disabled.
+It's only `variant=0` that solves 2 tasks.
+
 ## Changes between iteration 58 and iteration 59
 
 Immediately after submitting last docker image, I realized I had made a mistake. I forgot to check if `denoise_type5` actually solves some novel tasks, it turned out disappointing. It fully solves zero tasks. It solves 3 tasks partially.
