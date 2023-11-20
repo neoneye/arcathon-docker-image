@@ -1742,3 +1742,24 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-18T23-09.tgz](2023-11-18T23-09.tgz)
 
+## Changes between iteration 60 and iteration 61
+
+I have written a 10 page presentation about of how my solution works, that I'm submitting together with the docker image.
+
+I'm tweaking parameters for logistic regression and found a new combo of parameters that fully solves 1 task, out of the 800 public tasks.
+
+Scenario A: If the score is 9, then 3 tasks gets solve with logistic regression.
+This is what I hope for. And that means that my tweaks is useful.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` solves 1 of the hiddent tasks, and `variant=2` solves zero tasks.
+
+Scenario B: If the score is 8, then 2 task get solve with logistic regression. 
+This is status quo.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` and `variant=2` solves zero tasks.
+So I can continue tweaking `variant=1` and `variant=2`.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 61
+
+[Docker image: 2023-11-20T01-18.tgz](2023-11-20T01-18.tgz)
+
