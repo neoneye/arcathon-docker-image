@@ -1742,6 +1742,11 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-18T23-09.tgz](2023-11-18T23-09.tgz)
 
+This got `score 8`. Scenario B. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
+My crazy tweaks didn't help. 
+It's only `variant=0` that solves 2 tasks.
+The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
+
 ## Changes between iteration 60 and iteration 61
 
 I have written a 10 page presentation about of how my solution works, that I'm submitting together with the docker image.
@@ -1762,4 +1767,9 @@ Scenario C: If the score is 7 or less, then I have broken something.
 ## Iteration 61
 
 [Docker image: 2023-11-20T01-18.tgz](2023-11-20T01-18.tgz)
+
+This got `score 8`. Scenario B. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
+My crazy tweaks didn't help. 
+It's only `variant=0` that solves 2 tasks.
+The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
 
