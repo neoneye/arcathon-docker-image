@@ -1773,3 +1773,30 @@ My crazy tweaks didn't help.
 It's only `variant=0` that solves 2 tasks.
 The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
 
+## Changes between iteration 61 and iteration 62
+
+Discovered a major bug in my `Shape3x3` detector, where I'm trimming the image. This resulted in 48 different shapes.
+However this behaved uncertain when encountering shapes that would trim to a size smaller than 3x3, making it hard to
+identify where the center of the shape is located.
+I have reworked logistic regression variant 1 and variant 2 to use the new `Shape3x3` detector.
+The variant=0 still uses the old `Shape3x3` detector.
+
+I have made a `LandmarkSinglePixel` detector, that only gets triggered when all the input images have a single landmark.
+
+I'm tweaking parameters for logistic regression.
+
+Scenario A: If the score is 9, then 3 tasks gets solve with logistic regression.
+This is what I hope for. And that means that my tweaks is useful.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` solves 1 of the hiddent tasks, and `variant=2` solves zero tasks.
+
+Scenario B: If the score is 8, then 2 task get solve with logistic regression. 
+This is status quo.
+This means that `variant=0` solves 2 of the hidden tasks, and `variant=1` and `variant=2` solves zero tasks.
+So I can continue tweaking `variant=1` and `variant=2`.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 62
+
+[Docker image: 2023-11-23T02-45.tgz](2023-11-23T02-45.tgz)
+
