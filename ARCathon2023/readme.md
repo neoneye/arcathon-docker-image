@@ -1800,3 +1800,8 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-23T02-45.tgz](2023-11-23T02-45.tgz)
 
+This got `score 8`. Scenario B. It solves 2 tasks using logistic regression, and solves 6 tasks using genetic algorithms.
+My crazy tweaks didn't help. 
+It's only `variant=0` that solves 2 tasks.
+The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
+
