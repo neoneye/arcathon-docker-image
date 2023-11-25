@@ -1805,3 +1805,25 @@ My crazy tweaks didn't help.
 It's only `variant=0` that solves 2 tasks.
 The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
 
+## Changes between iteration 62 and iteration 63
+
+I have added a `SolveOneColor` solver. There are 17 tasks out of the 800 public ARC tasks, that outputs a single color.
+This code solves 10 of the tasks. And by happy accident solve 6 of the tasks. Only 1 of the tasks is unsolved.
+
+I have made no tweaks to the logistic regression.
+
+Scenario A: If the score is 9, then 1 tasks gets solve with the `SolveOneColor`.
+This is what I hope for. And that means that my tweaks is useful.
+
+Scenario B: If the score is 8, then no tasks get solve with the `SolveOneColor`.
+I can modify `SolveOneColor` so it picks another subset of the available colors.
+This is status quo.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+Logistic regression. I can still tweak `variant=1` and `variant=2` which solves zero tasks.
+
+## Iteration 63
+
+[Docker image: 2023-11-25T19-46.tgz](2023-11-25T19-46.tgz)
+
