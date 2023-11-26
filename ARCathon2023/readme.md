@@ -1808,7 +1808,7 @@ The `variant=1` and `variant=2` is not helping and can be disabled or tweaked.
 ## Changes between iteration 62 and iteration 63
 
 I have added a `SolveOneColor` solver. There are 17 tasks out of the 800 public ARC tasks, that outputs a single color.
-This code solves 10 of the tasks. And by happy accident solve 6 of the tasks. Only 1 of the tasks is unsolved.
+This code solves 9 of the tasks. And by happy accident solve 5 of the tasks. And 3 of the tasks are unsolved.
 
 I have made no tweaks to the logistic regression.
 
@@ -1826,4 +1826,27 @@ Logistic regression. I can still tweak `variant=1` and `variant=2` which solves 
 ## Iteration 63
 
 [Docker image: 2023-11-25T19-46.tgz](2023-11-25T19-46.tgz)
+
+This got `score 8`. Scenario B. My new `SolveOneColor` doesn't solve any tasks.
+Logistic regression `variant=0` solves 2 tasks.
+Logistic regression The `variant=1` and `variant=2` is not helping and can be disabled or tweaked. So I can still tweak these parameters.
+
+## Changes between iteration 63 and iteration 64
+
+Returning a different set of colors from `SolveOneColor` solver.
+
+I have made tweaks to the logistic regression variant=1 and variant=2.
+I have not touched variant=0.
+
+Scenario A: If the score is 9, then 1 tasks gets solve with the `SolveOneColor`, or by logistic regression variant=1 or variant=2.
+This is what I hope for. And that means that my tweaks is useful.
+
+Scenario B: If the score is 8, then no tasks get solve with the `SolveOneColor` nor logistic regression variant=1 nor variant=2.
+This is status quo.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 64
+
+[Docker image: 2023-11-26T22-22.tgz](2023-11-26T22-22.tgz)
 
