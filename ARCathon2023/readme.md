@@ -1850,3 +1850,11 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-26T22-22.tgz](2023-11-26T22-22.tgz)
 
+This got `score 8`. Scenario B. My new `SolveOneColor` doesn't solve any tasks.
+Logistic regression `variant=0` solves 2 tasks.
+Logistic regression The `variant=1` and `variant=2` is not helping and can be disabled or tweaked. So I can still tweak these parameters.
+
+## Changes between iteration 64 and iteration 65
+
+Returning yet another different set of colors from `SolveOneColor` solver.
+
