@@ -1858,3 +1858,19 @@ Logistic regression The `variant=1` and `variant=2` is not helping and can be di
 
 Returning yet another different set of colors from `SolveOneColor` solver.
 
+Optimized logistic regression variant=1 on ConceptARC, so that variant fully solves 11 tasks and partially solves 25 tasks. Out of 176 tasks.
+
+Optimized logistic regression variant=2 on Mini-ARC, so that variant fully solves 25 tasks and partially solves 0 tasks. Out of 149 tasks.
+
+Scenario A: If the score is 9, then 1 tasks gets solve either with the `SolveOneColor`, or by logistic regression variant=1 or variant=2.
+This is what I hope for. And that means that my tweaks is useful.
+
+Scenario B: If the score is 8, then no tasks get solve with the `SolveOneColor` nor logistic regression variant=1 nor variant=2.
+This is status quo.
+
+Scenario C: If the score is 7 or less, then I have broken something.
+
+## Iteration 65
+
+[Docker image: 2023-11-28T02-14.tgz](2023-11-28T02-14.tgz)
+
