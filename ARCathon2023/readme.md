@@ -1895,3 +1895,14 @@ Scenario B: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-29T12-18.tgz](2023-11-29T12-18.tgz)
 
+This got `score 8`. Scenario A. I fixed the problem. And the features I have disabled doesn't worsen the score.
+
+These are the features that are currently enabled/disabled.
+- Logistic regression `variant=0` solves 2 tasks.
+- Logistic regression `variant=1` solves 0 tasks. So it's disabled.
+- Logistic regression `variant=2` solves 0 tasks. So it's disabled.
+- Genetic algorithm with existing LODA programs, solves 5 tasks.
+- Genetic algorithm by mutating LODA programs, solves 1 task.
+- SolveOneColor solves 0 tasks. So it's disabled.
+- SolveSplit solves 0 tasks. So it's disabled.
+
