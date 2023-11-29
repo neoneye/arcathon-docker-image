@@ -1876,3 +1876,22 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 This got `score 7`. Scenario C. I have probably broken something with the existing logistic regression solver, so it only solves 1 task, where it previous solved 2 tasks. My new `SolveOneColor` probably doesn't solve any tasks.
 
+## Changes between iteration 65 and iteration 66
+
+I had indeed a disabled a feature `enable_earlier_prediction_shapetype_connectivity8` in the logistic regression that impacted `variant=0`.
+So now `variant=0` should hopefully behave as it has done previously.
+
+I have disabled `variant=1` and `variant=2`, since they are contributing with nothing. Not solving any of the hidden ARC tasks.
+
+I have disabled the `SolveOneColor` and the `SolveSplit` since these solvers doesn't solve any of the hidden ARC tasks.
+
+Scenario A: If the score is 8, then I have fixed the logistic regression `variant=0`, so it behaves as it has done in the past.
+If it ends up with score=8, then it’s a good place to stop doing more tweaking. The minimal set of features are enabled.
+It doesn’t generate an excessive amount of candidate solutions.
+
+Scenario B: If the score is 7 or less, then I have broken something.
+
+## Iteration 66
+
+[Docker image: 2023-11-29T12-18.tgz](2023-11-29T12-18.tgz)
+
