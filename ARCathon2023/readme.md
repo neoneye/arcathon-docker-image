@@ -1874,3 +1874,5 @@ Scenario C: If the score is 7 or less, then I have broken something.
 
 [Docker image: 2023-11-28T02-14.tgz](2023-11-28T02-14.tgz)
 
+This got `score 7`. Scenario C. I have probably broken something with the existing logistic regression solver, so it only solves 1 task, where it previous solved 2 tasks. My new `SolveOneColor` probably doesn't solve any tasks.
+
